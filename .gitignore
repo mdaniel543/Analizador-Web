@@ -1,0 +1,3 @@
+serviciojs/node_modules
+npm-debug.log
+serviciojs/.dockerignore

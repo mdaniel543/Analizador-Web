@@ -1,0 +1,111 @@
+<S0>  -->   public <S1> <S0>
+            epsilon
+
+<S1>  -->   class ID { <S2> }
+            interface ID { <S3> } 
+
+// Declaraciones de atributos y métodos
+<S2>  -->   public <S5> <S2>
+            TipoDato <S7>; <S2>
+            ID = <SE>; <S2>
+            Comentario-Unilinea <S2>
+            Comentario-Multilinea <S2>
+            epsilon
+
+//metodos declarados para interfaces
+<S3>  -->   public <S4> ID ( <S6> ) ;
+            Comentario-Unilinea <S2>
+            Comentario-Multilinea <S2>
+
+<S4>  -->   TipoDato
+            void
+
+//metodos implementados
+<S5>  -->   <S4> ID ( <S6> ) { <S8> }
+            <S4> ID ( <S6> ) ;
+            static void main (String[] args){ <S8> }
+            epsilon
+
+//Parametros
+<S6>  -->   TipoDato ID <S6'>
+            ID <S6'>
+            Cadena <S6'>
+            booleano <S6'>
+
+<S6'> -->   , <S6>
+            epsilon
+
+//Declaracion
+<S7>  -->   ID = <SE> <S7'> 
+            ID <S7'>
+
+<S7'> -->   , <S7>
+            epsilon
+
+//Sentencias
+<S8>  -->   for <S9> <S8>
+            while <S10> <S8>
+            do <S11> <S8>
+            if <S12> <S8>
+            break; <S8>
+            continue; <S8>
+            return <S13> ; <S8>
+            ID <S15>; <S8>
+            Print ( <SE> ); <S8>
+            TipoDato <S7>; <S8>
+            ID <S14>; <S8>
+            Comentario-Unilinea <S8>
+            Comentario-Multilinea <S8>
+
+//for
+<S9>  -->   ( TipoDato <S7>; <SE>; <SE> ){ <S8> }
+
+//while
+<S10>  -->   ( <SE> ) { <S8> }
+
+//do while
+<S11> -->   { <S8> } while ( <SE> );
+
+//if
+<S12> -->   ( <SE> ) { <S8> } <S13>
+
+//else if || else
+<S13> -->   else if ( <SE> ) { <S8> } <S13>
+            else { <S8> }
+            epsilon
+
+//Asignacion && llamadametodos
+<S14> -->   = <SE>
+            ( <S6> )
+            epsilon
+
+//EXPRESION
+<SE>  -->   ( <SE> ) <SE'>
+            Numero <SE'>
+            ID <SE'>
+            Cadena <SE'>
+            booleano
+            ! <SE>
+            - <SE>
+            epsilon
+
+<SE'> -->   && <SE>
+            || <SE>
+            ^ <SE>
+            > <SE>
+            < <SE>
+            >= <SE>
+            <= <SE>
+            == <SE>
+            != <SE>
+            + <SE>
+            - <SE>
+            * <SE>
+            / <SE>
+            ++
+            --
+            epsilon
+
+
+
+
