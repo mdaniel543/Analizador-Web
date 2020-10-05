@@ -1,2 +1,7 @@
 import {NodoAST} from "./NodoAST";
-// Falta
+import { Entorno } from "./Entorno/Entorno";
+
+interface Instruccion extends NodoAST{
+    ejecutar(ent:Entorno):Object;
+}
+export {Instruccion};

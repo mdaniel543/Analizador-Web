@@ -9,6 +9,7 @@ export class NodoError{
         this.tipo = tipo;
         this.descripcion = descripcion;
         this.linea = (linea+1);
+        this.columna = (columna);
     }
     public gettipo():string{
         return this.tipo;

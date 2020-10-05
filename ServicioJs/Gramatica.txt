@@ -70,9 +70,11 @@
 <S12> -->   ( <SE> ) { <S8> } <S13>
 
 //else if || else
-<S13> -->   else if ( <SE> ) { <S8> } <S13>
-            else { <S8> }
+<S13> -->   else <S13'>
             epsilon
+
+<S13'>-->   if ( <SE> ) { <S8> } <S13>
+            { <S8> }
 
 //Asignacion && llamadametodos
 <S14> -->   = <SE>
