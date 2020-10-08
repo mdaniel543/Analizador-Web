@@ -1,49 +1,49 @@
-<S0>  -->   public <S1> <S0>
+<S0>  -->   public class ID { <S2> }
+            public interface ID { <S3> } 
             epsilon
 
-<S1>  -->   class ID { <S2> }
-            interface ID { <S3> } 
-
-// Declaraciones de atributos y métodos
-<S2>  -->   public <S5> <S2>
-            TipoDato <S7>; <S2> 
-            ID = <SE>; <S2>
+// Declaraciones de atributos y métodos*+
+<S2>  -->   <S5> <S2>
+            <S7>; <S2>
             Comentario-Unilinea <S2>
             Comentario-Multilinea <S2>
             epsilon
 
-//metodos declarados para interfaces
+//metodos declarados para interfaces*
 <S3>  -->   public <S4> ID ( <S6> ) ;
-            Comentario-Unilinea <S3>
-            Comentario-Multilinea <S3>
+            Comentario-Unilinea <S2>
+            Comentario-Multilinea <S2>
             epsilon
 
+//**
 <S4>  -->   TipoDato
             void
 
-//metodos implementados
-<S5>  -->   <S4> ID ( <S6> ) { <S8> }
-            <S4> ID ( <S6> ) ;
-            static void main (String[] args){ <S8> }
+//metodos implementados*+
+<S5>  -->   public <S4> ID ( <S6> ) { <S8> }
+            public <S4> ID ( <S6> ) ;
+            public static void main (String[] args){ <S8> }
 
-//Parametros
+//Parametros*
 <S6>  -->   TipoDato ID <S6'>
-            <SE> <S6'>
-            epsilon
+            ID <S6'>
+            Cadena <S6'>
+            booleano <S6'>
 
 <S6'> -->   , <S6>
             epsilon
 
-//Declaracion
-<S7>  -->   ID = <SE> <S7'> 
-            ID <S7'>
+//Declaracion*
+<S7>  -->   TipoDato ID = <SE> <S7'> 
+            TipoDato ID <S7'>
+            ID = <SE> <S7'>//
 
 <S7'> -->   , <S7>
             epsilon
 
 //Sentencias
-<S8>  -->   for <S9> <S8>
-            while <S10> <S8>
+<S8>  -->   <S9> <S8>
+            <S10> <S8>
             do <S11> <S8>
             if <S12> <S8>
             break; <S8>
@@ -51,16 +51,15 @@
             return <S13> ; <S8>
             Print ( <SE> ); <S8>
             TipoDato <S7>; <S8>
-            ID <S14>; <S8>
+            <S14>; <S8>
             Comentario-Unilinea <S8>
             Comentario-Multilinea <S8>
-            epsilon
 
 //for
-<S9>  -->   ( TipoDato <S7>; <SE>; <SE> ){ <S8> }
+<S9>  -->   for ( TipoDato <S7>; <SE>; <SE> ){ <S8> }
 
 //while
-<S10>  -->   ( <SE> ) { <S8> }
+<S10>  -->   while ( <SE> ) { <S8> }
 
 //do while
 <S11> -->   { <S8> } while ( <SE> );
@@ -76,7 +75,7 @@
             { <S8> }
 
 //Asignacion && llamadametodos
-<S14> -->   = <SE>
+<S14> -->   ID = <SE>
             ( <S6> )
             epsilon
 
@@ -107,11 +106,9 @@
             --
             epsilon
 
+//Posible
 <TipoDato>-->   int
                 String
                 boolean
                 double
                 char
-
-
-

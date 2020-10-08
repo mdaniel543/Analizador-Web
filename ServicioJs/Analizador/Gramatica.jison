@@ -1,21 +1,22 @@
 /*-----------------------------------------------------------IMPORTS---------------------------------------------------*/
 
 %{
-    let CEntorno = require('../AST/Entorno/Entorno');
-
     let CErrores=require('../AST/Error');
     let CNodoError=require('../AST/NodoError');
 %}
 
-/*-------------------------------------------------------------LEXICO-------------------------------------------------------*/
+/*-----------------------------------------------------------LEXICO-------------------------------------------------------*/
 
 %lex 
+
+%options case-insensitive
+
 %%
-  
 //COMENTARIO UNILINEA
+"//".*  
 
 //COMENTARIO MULTIPLE LINEA
-[/][*][^*]*[*]+([^/*][^*]*[*]+)*[/]	////////
+[/][*][^*]*[*]+([^/*][^*]*[*]+)*[/]
 
 //RESERVADAS
 "public"            return 'PR_public';
@@ -45,11 +46,15 @@
 "main"              return 'PR_main';
 "args"              return 'PR_args';
 
-//NUMEROS
-[0-9]+"."[0-9]+             %{  return 'DECIMAL';  %}
-[0-9]+                      %{  return 'ENTERO';  %}
+"System"            return 'PR_System';
+"out"               return 'PR_out';
+"print"             return 'PR_print';
+"println"           return 'PR_print'; 
+
+//NUMERO
+[0-9]+("."[0-9]+)?\b  return 'NUMBER';
 //ID
-[a-zA-Z\_][a-zA-Z0-9\_]*    %{  return 'ID';  %}
+([a-zA-Z])[a-zA-Z0-9_]*    %{  return 'ID';  %}
 //CADENA
 \"[^\"]*\"				{ yytext = yytext.substr(1,yyleng-2); return 'CADENA'; }
 //CARACTER
@@ -61,6 +66,8 @@
 "}"                 return  'LL_CIERRA';
 "("                 return  'P_ABRE';
 ")"                 return  'P_CIERRA';
+"["                 return  'C_ABRE';
+"]"                 return  'C_CIERRA';
 ","                 return  'Coma';
 ";"                 return  'PuntoyComa';
 "="                 return  'Asignar';
@@ -79,7 +86,8 @@
 "*"                 return  'Multiplicacion';
 "/"                 return  'Division';
 "++"                return  'Adicion';
-"--"                return  "Sustraccion"
+"--"                return  'Sustraccion';
+"."                 return  'Punto';
 
 
 //IGNORADOS
@@ -89,6 +97,9 @@
 <<EOF>>     %{  return 'EOF';   %}
 
 //SE AGREGA EL ERROR LEXICO
-.           CErrores.Errores.add(new CNodoError.NodoError("Lexico", "No se esperaba el caracter: "+yytext,yylineno,0))
+.           CErrores.Errores.add(new CNodoError.NodoError("Lexico", "No se esperaba el caracter: "+yytext,yylineno, yylloc.first_column))
 
 /lex
+
+
+
