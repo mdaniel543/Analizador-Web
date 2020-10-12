@@ -1,12 +1,15 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var express = require('express');
-var cors = require('cors');
-var bodyParser = require('body-parser');
+const cors = require('cors');
+const bodyParser = require('body-parser');
 var app = express();
-app.use(bodyParser.json());
+const routes = require('./rutas');
+
+app.set('port', 3000);
 app.use(cors());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.listen(3000, function () {
-    console.log('Servidor en el puerto 3000');
+app.use(bodyParser.urlencoded({/*limit: "50mb", */extended: false}));
+app.use(bodyParser.json({/*limit: '50mb', */extended: false}));
+app.use(routes);
+
+app.listen(8080, function () {
+  console.log('Example app listening on port 3000!');
 });

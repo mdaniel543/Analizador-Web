@@ -43,6 +43,7 @@ const TIPO_INSTRUCCION = {
     DMETODO:     'INSTR_DMETODO', //Metodo declarados+
     MAIN:        'INSTR_MAIN',
     DECLARACION: 'INSTR_DECLA',
+    ASIGNACION:  'INSTR_ASIG',
     
     FOR:         'INSTR_FOR',
     WHILE:       'INSTR_WHILE',
@@ -52,7 +53,6 @@ const TIPO_INSTRUCCION = {
     CONTINUE:    'INSTR_CONTINUE',
     RETURN:      'INSTR_RETURN',
     PRINT:       'INSTR_PRINT',
-    ASIGNACION:  'INSTR_ASIG',
     LLAMADA_M:   'INSTR_LLA_M',
 }
 
@@ -101,7 +101,7 @@ const instruccionesAPI = {
 	nuevoOperacionUnaria: function(operando, tipo) {
 		return nuevaOperacion(operando, undefined, tipo);
     },
-    
+
 
     /**
 	 * Crea un nuevo objeto tipo Valor, esto puede ser una cadena, un número o un identificador
@@ -115,7 +115,7 @@ const instruccionesAPI = {
 		}
     },
 
-    //---------------------------------CLASS---------------------------------
+    //---------------------------------CLASS-----------------------------------------
     /**
      * Creo un nuevo objeto para classs 
      * @param {*} _public
@@ -129,12 +129,12 @@ const instruccionesAPI = {
 	nuevoClase: function(_public, _clase, _ID, _LL_ABRE, _AyM, _LL_CIERRA) {
 		return {
 			tipoIns: TIPO_INSTRUCCION.CLASS,
-            _public = _public,
-            _clase = _clase,
-            _ID = _ID,
-            _LL_ABRE = _LL_ABRE,
-            _AyM = _AyM,
-            _LL_CIERRA = _LL_CIERRA
+            _public:_public,
+            _clase : _clase,
+            _ID : _ID,
+            _LL_ABRE : _LL_ABRE,
+            _AyM : _AyM,
+            _LL_CIERRA : _LL_CIERRA
 		}
     },
 
@@ -146,14 +146,14 @@ const instruccionesAPI = {
      * @param {*} _LL_ABRE
      * @param {*} _LL_CIERRA
      */
-	nuevoClase: function(_public, _clase, _ID, _LL_ABRE, _LL_CIERRA) {
+	nuevoClaseV: function(_public, _clase, _ID, _LL_ABRE, _LL_CIERRA) {
 		return {
 			tipoIns: TIPO_INSTRUCCION.CLASS,
-            _public = _public,
-            _clase = _clase,
-            _ID = _ID,
-            _LL_ABRE = _LL_ABRE,
-            _LL_CIERRA = _LL_CIERRA
+            _public: _public,
+            _clase: _clase,
+            _ID : _ID,
+            _LL_ABRE : _LL_ABRE,
+            _LL_CIERRA : _LL_CIERRA
 		}
     },
     
@@ -167,15 +167,15 @@ const instruccionesAPI = {
      * @param {*} _M_IN
      * @param {*} _LL_CIERRA
      */
-	nuevoClase: function(_public, _interface, _ID, _LL_ABRE, _M_IN, _LL_CIERRA) {
+	nuevoInter: function(_public, _interface, _ID, _LL_ABRE, _M_IN, _LL_CIERRA) {
 		return {
 			tipoIns: TIPO_INSTRUCCION.INTERFACE,
-            _public = _public,
-            _interface = _interface,
-            _ID = _ID,
-            _LL_ABRE = _LL_ABRE,
-            _M_IN = _M_IN,
-            _LL_CIERRA = _LL_CIERRA
+            _public : _public,
+            _interface : _interface,
+            _ID : _ID,
+            _LL_ABRE: _LL_ABRE,
+            _M_IN: _M_IN,
+            _LL_CIERRA : _LL_CIERRA
 		}
     },
     /**
@@ -186,14 +186,14 @@ const instruccionesAPI = {
      * @param {*} _LL_ABRE
      * @param {*} _LL_CIERRA
      */
-	nuevoClase: function(_public, _interface, _ID, _LL_ABRE, _LL_CIERRA) {
+	nuevoInterV: function(_public, _interface, _ID, _LL_ABRE, _LL_CIERRA) {
 		return {
 			tipoIns: TIPO_INSTRUCCION.INTERFACE,
-            _public = _public,
-            _interface = _interface,
-            _ID = _ID,
-            _LL_ABRE = _LL_ABRE,
-            _LL_CIERRA = _LL_CIERRA
+            _public: _public,
+            _interface: _interface,
+            _ID:_ID,
+            _LL_ABRE: _LL_ABRE,
+            _LL_CIERRA: _LL_CIERRA
 		}
     },
 
@@ -214,15 +214,15 @@ const instruccionesAPI = {
     nuevoMI_P: function(_public, _S4, _ID, _P_ABRE, _Parametros, _P_CIERRA, _LL_ABRE, _Sentencias, _LL_CIERRA){
         return{
             tipoIns: TIPO_INSTRUCCION.IMETODO,
-            _public = _public,
-            _S4 = _S4,
-            _ID = _ID,
-            _P_ABRE = _P_ABRE,
-            _Parametros = _Parametros,
-            _P_CIERRA = _P_CIERRA,
-            _LL_ABRE = _LL_ABRE,
-            _Sentencias = _Sentencias,
-            _LL_CIERRA = _LL_CIERRA
+            _public: _public,
+            _S4:_S4,
+            _ID: _ID,
+            _P_ABRE: _P_ABRE,
+            _Parametros: _Parametros,
+            _P_CIERRA: _P_CIERRA,
+            _LL_ABRE: _LL_ABRE,
+            _Sentencias: _Sentencias,
+            _LL_CIERRA: _LL_CIERRA
         }
     },
 
@@ -240,14 +240,60 @@ const instruccionesAPI = {
     nuevoMI_SP: function(_public, _S4, _ID, _P_ABRE, _P_CIERRA, _LL_ABRE, _Sentencias, _LL_CIERRA){
         return{
             tipoIns: TIPO_INSTRUCCION.IMETODO,
-            _public = _public,
-            _S4= _S4,
-            _ID = _ID,
-            _P_ABRE = _P_ABRE,
-            _P_CIERRA = _P_CIERRA,
-            _LL_ABRE = _LL_ABRE,
-            _Sentencias = _Sentencias,
-            _LL_CIERRA = _LL_CIERRA
+            _public: _public,
+            _S4:_S4,
+            _ID: _ID,
+            _P_ABRE: _P_ABRE,
+            _P_CIERRA: _P_CIERRA,
+            _LL_ABRE: _LL_ABRE,
+            _Sentencias: _Sentencias,
+            _LL_CIERRA: _LL_CIERRA
+        }
+    },
+    /**
+     * Creo un objeto para los metodos implementados sin sentencias
+     * @param {*} _public
+     * @param {*} _S4
+     * @param {*} _ID
+     * @param {*} _P_ABRE
+     * @param {*} _Parametros
+     * @param {*} _P_CIERRA
+     * @param {*} _LL_ABRE
+     * @param {*} _LL_CIERRA
+     */
+    nuevoMI_S: function(_public, _S4, _ID, _P_ABRE, _Parametros, _P_CIERRA, _LL_ABRE, _LL_CIERRA){
+        return{
+            tipoIns: TIPO_INSTRUCCION.IMETODO,
+            _public:_public,
+            _S4 :_S4,
+            _ID : _ID,
+            _P_ABRE : _P_ABRE,
+            _Parametros: _Parametros,
+            _P_CIERRA: _P_CIERRA,
+            _LL_ABRE: _LL_ABRE,
+            _LL_CIERRA : _LL_CIERRA
+        }
+    },
+    /**
+     * Creo un objeto para los metodos implementados sin sentencias y sin parametos
+     * @param {*} _public
+     * @param {*} _S4
+     * @param {*} _ID
+     * @param {*} _P_ABRE
+     * @param {*} _P_CIERRA
+     * @param {*} _LL_ABRE
+     * @param {*} _LL_CIERRA
+     */
+    nuevoMI_S_P: function(_public, _S4, _ID, _P_ABRE, _P_CIERRA, _LL_ABRE, _LL_CIERRA){
+        return{
+            tipoIns: TIPO_INSTRUCCION.IMETODO,
+            _public: _public,
+            _S4: _S4,
+            _ID : _ID,
+            _P_ABRE: _P_ABRE,
+            _P_CIERRA: _P_CIERRA,
+            _LL_ABRE: _LL_ABRE,
+            _LL_CIERRA : _LL_CIERRA
         }
     },
     /**
@@ -263,13 +309,13 @@ const instruccionesAPI = {
     nuevoMD_P: function(_public, _S4, _ID, _P_ABRE, _Parametros, _P_CIERRA, _PyC){
         return{
             tipoIns: TIPO_INSTRUCCION.DMETODO,
-            _public = _public,
-            _S4 = _S4,
-            _ID = _ID,
-            _P_ABRE = _P_ABRE,
-            _Parametros = _Parametros,
-            _P_CIERRA = _P_CIERRA,
-            _PyC = _PyC
+            _public : _public,
+            _S4 : _S4,
+            _ID : _ID,
+            _P_ABRE :_P_ABRE,
+            _Parametros: _Parametros,
+            _P_CIERRA : _P_CIERRA,
+            _PyC: _PyC
         }
     },
 
@@ -285,12 +331,12 @@ const instruccionesAPI = {
     nuevoMD_SP: function(_public, _S4, _ID, _P_ABRE, _P_CIERRA, _PyC){
         return{
             tipoIns: TIPO_INSTRUCCION.DMETODO,
-            _public = _public,
-            _S4= _S4,
-            _ID = _ID,
-            _P_ABRE = _P_ABRE,
-            _P_CIERRA = _P_CIERRA,
-            _PyC = _PyC
+            _public : _public,
+            _S4: _S4,
+            _ID : _ID,
+            _P_ABRE : _P_ABRE,
+            _P_CIERRA : _P_CIERRA,
+            _PyC :_PyC
         }
     },
 
@@ -314,20 +360,61 @@ const instruccionesAPI = {
     nuevoMAIN: function(_public, _void, _main, _P_ABRE, _String, _C_ABRE, _C_CIERRA, _args, _P_CIERRA, _LL_ABRE, _Sentencias, _LL_CIERRA){
         return{
             tipoIns: TIPO_INSTRUCCION.MAIN,
-            _public = _public,
-            _void= _void,
-            _main = _main,
-            _P_ABRE = _P_ABRE,
-            _String = _String,
-            _C_ABRE = _C_ABRE,
-            _C_CIERRA = _C_CIERRA,
-            _args = _args,
-            _P_CIERRA = _P_CIERRA,
-            _LL_ABRE = _LL_ABRE
+            _public : _public,
+            _void: _void,
+            _main : _main,
+            _P_ABRE : _P_ABRE,
+            _String : _String,
+            _C_ABRE : _C_ABRE,
+            _C_CIERRA : _C_CIERRA,
+            _args : _args,
+            _P_CIERRA : _P_CIERRA,
+            _LL_ABRE : _LL_ABRE,
+            _Sentencias: _Sentencias,
+            _LL_CIERRA: _LL_CIERRA
+        }
+    },
+    /**
+     * Creo un objeto para el main
+     * @param {*} _public
+     * @param {*} _void 
+     * @param {*} _main
+     * @param {*} _P_ABRE
+     * @param {*} _String
+     * @param {*} _C_ABRE
+     * @param {*} _C_CIERRA
+     * @param {*} _args
+     * @param {*} _P_CIERRA
+     * @param {*} _LL_ABRE
+     * @param {*} _LL_CIERRA
+     */
+    nuevoMAIN_S: function(_public, _void, _main, _P_ABRE, _String, _C_ABRE, _C_CIERRA, _args, _P_CIERRA, _LL_ABRE,_LL_CIERRA){
+        return{
+            tipoIns: TIPO_INSTRUCCION.MAIN,
+            _public : _public,
+            _void: _void,
+            _main : _main,
+            _P_ABRE : _P_ABRE,
+            _String : _String,
+            _C_ABRE : _C_ABRE,
+            _C_CIERRA : _C_CIERRA,
+            _args : _args,
+            _P_CIERRA : _P_CIERRA,
+            _LL_ABRE : _LL_ABRE,
+            _LL_CIERRA: _LL_CIERRA 
         }
     },
 
     //---------------------------------PARAMETROS---------------------------
+    /**
+     * Creo una lista para parametros
+     * @param {*} id 
+     */
+    nuevaListaPAR: function (id) {
+		var listaPAR = []; 
+		listaPAR.push(id);
+		return listaPAR;
+    },
     /**
 	 * Creo un objeto para Parametros para expresion
 	 * @param {*} expresion 
@@ -373,48 +460,52 @@ const instruccionesAPI = {
 		}
     },
 
-    //-----------------------------Atributos------------------------------
+    //-----------------------------DECLARACION------------------------------
     /**
      * Creo un objetos para Declaracion de variables para expresion
      * @param {*} _Type
+     * @param {*} _LD
+     * @param {*} _PyC
+     */
+    nuevoD_E: function(_Type, _LD, _PyC){
+        return{
+            tipoIns: TIPO_INSTRUCCION.DECLARACION,
+            _Type: _Type,
+            _LD: _LD,
+            _PyC: _PyC
+        }
+    },
+    /**
+	 * Crea una lista de ids declarados
+	 * @param {*} id 
+	 */
+	nuevaListaID: function (id) {
+		var listaIDS = []; 
+		listaIDS.push(id);
+		return listaIDS;
+    },
+    /**
+     * Creo un objetos para Declaracion de variables para expresion
      * @param {*} _ID
      * @param {*} _Igual
      * @param {*} _expresion
      */
-    nuevoD_E: function(_Type, _ID, _Igual, _expresion){
+    nuevoD_E: function( _ID, _Igual, _expresion){
         return{
-            tipoIns: TIPO_INSTRUCCION.DECLARACION,
-            _Type: _Type,
             _ID: _ID,
             _Igual: _Igual,
             _expresion: _expresion
         }
     },
     /**
-     * Creo un objetos para Declaracion de variables
-     * @param {*} _Type
-     * @param {*} _ID
-     */
-    nuevoD: function(_Type, _ID){
-        return{
-            tipoIns: TIPO_INSTRUCCION.DECLARACION,
-            _Type: _Type,
-            _ID: _ID
-        }
-    },
-
-    /**
      * Creo un objetos para Declaracion de variables para expresion coma
-     * @param {*} _Type
      * @param {*} _ID
      * @param {*} _Igual
      * @param {*} _expresion
      * @param {*} _Coma
      */
-    nuevoD_E_C: function(_Type, _ID, _Igual, _expresion, _Coma){
+    nuevoD_E_C: function( _ID, _Igual, _expresion, _Coma){
         return{
-            tipoIns: TIPO_INSTRUCCION.DECLARACION,
-            _Type: _Type,
             _ID: _ID,
             _Igual: _Igual,
             _expresion: _expresion,
@@ -422,15 +513,97 @@ const instruccionesAPI = {
         }
     },
     /**
+     * Creo un objetos para Declaracion de variables para llamada metodo
+     * @param {*} _ID
+     * @param {*} _Igual
+     * @param {*} _ID1
+     * @param {*} _P_ABRE
+     * @param {*} _Parametros
+     * @param {*} _P_CIERRA
+     */
+    nuevoD_LL: function( _ID, _Igual, _ID1, _P_ABRE, _Parametros, _P_CIERRA){
+        return{
+            _ID: _ID,
+            _Igual: _Igual,
+            _ID1: _ID1,
+            _P_ABRE: _P_ABRE,
+            _Parametros: _Parametros, 
+            _P_CIERRA: _P_CIERRA
+        }
+    },
+    /**
+     * Creo un objetos para Declaracion de variables para llamada metodo coma
+     * @param {*} _ID
+     * @param {*} _Igual
+     * @param {*} _ID1
+     * @param {*} _P_ABRE
+     * @param {*} _Parametros
+     * @param {*} _P_CIERRA
+     * @param {*} _Coma
+     */
+    nuevoD_LL_C: function( _ID, _Igual, _ID1, _P_ABRE, _Parametros, _P_CIERRA, _Coma){
+        return{
+            _ID: _ID,
+            _Igual: _Igual,
+            _ID1: _ID1,
+            _P_ABRE: _P_ABRE,
+            _Parametros: _Parametros, 
+            _P_CIERRA: _P_CIERRA,
+            _Coma: _Coma
+        }
+    },
+    /**
+     * Creo un objetos para Declaracion de variables para llamada metodo
+     * @param {*} _ID
+     * @param {*} _Igual
+     * @param {*} _ID1
+     * @param {*} _P_ABRE
+     * @param {*} _P_CIERRA
+     */
+    nuevoD_LL_P: function( _ID, _Igual, _ID1, _P_ABRE, _P_CIERRA){
+        return{
+            _ID: _ID,
+            _Igual: _Igual,
+            _ID1: _ID1,
+            _P_ABRE: _P_ABRE,
+            _P_CIERRA: _P_CIERRA
+        }
+    },
+    /**
+     * Creo un objetos para Declaracion de variables para llamada metodo coma
+     * @param {*} _ID
+     * @param {*} _Igual
+     * @param {*} _ID1
+     * @param {*} _P_ABRE
+     * @param {*} _P_CIERRA
+     * @param {*} _Coma
+     */
+    nuevoD_LL_P_C: function( _ID, _Igual, _ID1, _P_ABRE, _P_CIERRA, _Coma){
+        return{
+            _ID: _ID,
+            _Igual: _Igual,
+            _ID1: _ID1,
+            _P_ABRE: _P_ABRE,
+            _P_CIERRA: _P_CIERRA,
+            _Coma: _Coma
+        }
+    },    
+    /**
+     * Creo un objetos para Declaracion de variables 
+     * @param {*} _ID
+     */
+    nuevoD: function(_ID){
+        return{
+            _ID: _ID
+        }
+    },
+    /**
      * Creo un objetos para Declaracion de variables coma
-     * @param {*} _Type
      * @param {*} _ID
      * @param {*} _Coma
      */
-    nuevoD_C: function(_Type, _ID, _Coma){
+    nuevoD_C: function(_ID, _Coma){
         return{
-            tipoIns: TIPO_INSTRUCCION.DECLARACION,
-            _Type: _Type,
             _ID: _ID,
             _Coma: _Coma
         }
@@ -442,29 +615,57 @@ const instruccionesAPI = {
      * @param {*} _ID
      * @param {*} _Igual
      * @param {*} _expresion
+     * @param {*} _PyC
      */
-    nuevoD_I: function(_ID, _Igual, _expresion){
-        return{
-            tipoIns: TIPO_INSTRUCCION.ASIGNACION,
-            _ID: _ID,
-            _Igual: _Igual,
-            _expresion: _expresion
-        }
-    },
-    /**
-     * Creo un objetos para asignacion de variables para expresion coma
-     * @param {*} _ID
-     * @param {*} _Igual
-     * @param {*} _expresion
-     * @param {*} _Coma
-     */
-    nuevoD_I_C: function(_ID, _Igual, _expresion, _Coma){
+    nuevoA: function(_ID, _Igual, _expresion, _PyC){
         return{
             tipoIns: TIPO_INSTRUCCION.ASIGNACION,
             _ID: _ID,
             _Igual: _Igual,
             _expresion: _expresion,
-            _Coma: _Coma
+            _PyC: _PyC
+        }
+    },
+    /**
+     * Creo un objetos para asignacion con llamada al metodo
+     * @param {*} _ID
+     * @param {*} _Igual
+     * @param {*} _ID1
+     * @param {*} _P_ABRE
+     * @param {*} _Parametros
+     * @param {*} _P_CIERRA
+     * @param {*} _PyC
+     */
+    nuevoA_LL: function(_ID, _Igual, _ID1, _P_ABRE, _Parametros, _P_CIERRA, _PyC){
+        return{
+            tipoIns: TIPO_INSTRUCCION.ASIGNACION,
+            _ID: _ID,
+            _Igual: _Igual,
+            _ID1: _ID1,
+            _P_ABRE: _P_ABRE,
+            _Parametros: _Parametros,
+            _P_CIERRA: _P_CIERRA,
+            _PyC: _PyC
+        }
+    },
+    /**
+     * Creo un objetos para asignacion con llamada al metodo sin parametros
+     * @param {*} _ID
+     * @param {*} _Igual
+     * @param {*} _ID1
+     * @param {*} _P_ABRE
+     * @param {*} _P_CIERRA
+     * @param {*} _PyC
+     */
+    nuevoA_LL_P: function(_ID, _Igual, _ID1, _P_ABRE, _P_CIERRA, _PyC){
+        return{
+            tipoIns: TIPO_INSTRUCCION.ASIGNACION,
+            _ID: _ID,
+            _Igual: _Igual,
+            _ID1: _ID1,
+            _P_ABRE: _P_ABRE,
+            _P_CIERRA: _P_CIERRA,
+            _PyC: _PyC
         }
     },
     //---------------------------LLAMADA METODOS---------------------------------
@@ -759,7 +960,15 @@ const instruccionesAPI = {
             _else: _else
         }
     },
-
+    /**
+	 * Crea una lista de else if o un else
+	 * @param {*} _ei 
+	 */
+	nuevaListae: function (_ei) {
+		var listae = []; 
+		listae.push(_ei);
+		return listae;
+    },
     /**
      * Creo un objeto para else if
      * @param {*} _else
@@ -802,54 +1011,6 @@ const instruccionesAPI = {
             _P_CIERRA: _P_CIERRA,
             _LL_ABRE: _LL_ABRE,
             _LL_CIERRA: _LL_CIERRA
-        }
-    },
-    /**
-     * Creo un objeto para else if con mas else if o un else 
-     * @param {*} _else
-     * @param {*} _if 
-     * @param {*} _P_ABRE
-     * @param {*} _expresion
-     * @param {*} _P_CIERRA
-     * @param {*} _LL_ABRE
-     * @param {*} _Sentencias
-     * @param {*} _LL_CIERRA
-     * @param {*} _else1
-     */
-    nuevoe_if_e: function(_else, _if, _P_ABRE, _expresion, _P_CIERRA, _LL_ABRE, _Sentencias, _LL_CIERRA, _else1){
-        return{
-            _else: _else,
-            _if: _if, 
-            _P_ABRE: _P_ABRE,
-            _expresion: _expresion, 
-            _P_CIERRA: _P_CIERRA,
-            _LL_ABRE: _LL_ABRE,
-            _Sentencias: _Sentencias,
-            _LL_CIERRA: _LL_CIERRA,
-            _else1: _else1
-        }
-    },
-    /**
-     * Creo un objeto para else if vacio con mas else if o un else 
-     * @param {*} _else
-     * @param {*} _if 
-     * @param {*} _P_ABRE
-     * @param {*} _expresion
-     * @param {*} _P_CIERRA
-     * @param {*} _LL_ABRE
-     * @param {*} _LL_CIERRA
-     * @param {*} _else1
-     */
-    nuevoe_ifV_e: function(_else, _if, _P_ABRE, _expresion, _P_CIERRA, _LL_ABRE, _LL_CIERRA, _else1){
-        return{
-            _else: _else,
-            _if: _if, 
-            _P_ABRE: _P_ABRE,
-            _expresion: _expresion, 
-            _P_CIERRA: _P_CIERRA,
-            _LL_ABRE: _LL_ABRE,
-            _LL_CIERRA: _LL_CIERRA,
-            _else1: _else1
         }
     },
     /**
@@ -908,6 +1069,30 @@ const instruccionesAPI = {
             _PyC: _PyC
         }
     },
+    /**
+     * Creo un Objeto para println en consola sin expresion solo el salto
+     * @param {*} _system
+     * @param {*} _punto
+     * @param {*} _out
+     * @param {*} _punto1
+     * @param {*} _println
+     * @param {*} _P_ABRE
+     * @param {*} _P_CIERRA
+     * @param {*} _PyC
+     */
+    nuevoPrintV: function(_system, _punto, _out, _punto1, _println, _P_ABRE, _P_CIERRA, _PyC){
+        return{
+            tipoIns: TIPO_INSTRUCCION.PRINT,
+            _system: _system,
+            _punto: _punto,
+            _out: _out,
+            _punto1: _punto1,
+            _println: _println,
+            _P_ABRE: _P_ABRE,
+            _P_CIERRA: _P_CIERRA,
+            _PyC: _PyC
+        }
+    },
 
     //------------------------------BREAK-----------------------------------
     /**
@@ -961,6 +1146,11 @@ const instruccionesAPI = {
             _return: _return,
             _PyC: _PyC
         }
-    },
+    }
 
 }
+
+module.exports.TIPO_OPERACION = TIPO_OPERACION;
+module.exports.TIPO_INSTRUCCION = TIPO_INSTRUCCION;
+module.exports.TIPO_VALOR = TIPO_VALOR;
+module.exports.instruccionesAPI = instruccionesAPI;
