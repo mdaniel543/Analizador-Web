@@ -1,114 +1,159 @@
-<S0>  -->   public class ID { <S2> }
-            public interface ID { <S3> } 
-            epsilon
+-----------------------------------------------------
+<S0>  -->   <S0> <S1>
+            <S1>
 
-// Declaraciones de atributos y métodos*+
-<S2>  -->   <S5> <S2>
-            <S7>; <S2>
-            Comentario-Unilinea <S2>
-            Comentario-Multilinea <S2>
-            epsilon
+<S1>  -->   public class ID { <S22> }
+            public class ID { }
+            public interface ID { <S33> } 
+            public interface ID { } 
+----------------------------------------------------
+// Declaraciones de atributos y métodos 
+<S22> -->   <S22> <S2>
+            <S2>
 
-//metodos declarados para interfaces*
-<S3>  -->   public <S4> ID ( <S6> ) ;
-            Comentario-Unilinea <S2>
-            Comentario-Multilinea <S2>
-            epsilon
+<S2>  -->   <S5>
+            <S77>
+            <S14>
+            Comentario-Unilinea 
+            Comentario-Multilinea 
+----------------------------------------------------
+//metodos declarados para interfaces
+<S33> -->   <S33> <S3>
+            <S3>
 
-//**
+<S3>  -->   public <S4> ID ( <S66> ) ;
+            public <S4> ID () ;
+            Comentario-Unilinea
+            Comentario-Multilinea
+---------------------------------------------------
+//tipo de metodo
 <S4>  -->   TipoDato
             void
+----------------------------------------------------
+//metodos implementados
+<S5>  -->   public <S4> ID ( <S66> ) { <S88> } 
+            public <S4> ID ( ) { <S88> }
+            public <S4> ID ( <S66> ) { }
+            public <S4> ID () { }
+            public <S4> ID ( <S66> ) ;
+            public <S4> ID ( ) ;
+            public static void main (String[] args){ <S88> }
+            public static void main (String[] args){}
+-----------------------------------------------------
+//Parametros
+<S66> -->   <S66> <S6>
+            <S6>
 
-//metodos implementados*+
-<S5>  -->   public <S4> ID ( <S6> ) { <S8> }
-            public <S4> ID ( <S6> ) ;
-            public static void main (String[] args){ <S8> }
+<S6>  -->   TipoDato ID
+            TipoDato ID,
+            <SE> 
+            <SE>,
+------------------------------------------------------
+//Declaracion
+<S77> -->   TipoDato <LS7>;
 
-//Parametros*
-<S6>  -->   TipoDato ID <S6'>
-            ID <S6'>
-            Cadena <S6'>
-            booleano <S6'>
+<LS7> -->   <LS7> <S7>
+            |<S7>
 
-<S6'> -->   , <S6>
-            epsilon
-
-//Declaracion*
-<S7>  -->   TipoDato ID = <SE> <S7'> 
-            TipoDato ID <S7'>
-            ID = <SE> <S7'>//
-
-<S7'> -->   , <S7>
-            epsilon
-
+<S7> -->    
+            ID = <expresion>,
+            ID = <expresion>
+            ID = ID ( <S66> ),
+            ID = ID ( <S66> )
+            ID = ID ( ),
+            ID = ID ( )
+            ID ,
+            ID
+--------------------------------------------------------
+//Asignacion
+<S14> -->   ID = <SE> ;
+            ID = ID ( <S66> ) ;
+            ID = ID ( ) ;
+--------------------------------------------------------
 //Sentencias
-<S8>  -->   <S9> <S8>
-            <S10> <S8>
-            do <S11> <S8>
-            if <S12> <S8>
-            break; <S8>
-            continue; <S8>
-            return <S13> ; <S8>
-            Print ( <SE> ); <S8>
-            TipoDato <S7>; <S8>
-            <S14>; <S8>
-            Comentario-Unilinea <S8>
-            Comentario-Multilinea <S8>
+<S88> -->   <S88> <S8>
+            <S8>
 
+<S8>  -->   <S9> 
+            <S10> 
+            <S11>
+            <S12>
+            <S16>
+            break;
+            continue; 
+            return <S13> ;
+            return;
+            <S77>
+            <S14>
+            <S15> 
+            Comentario-Unilinea
+            Comentario-Multilinea
+
+-------------------------------------------------------
 //for
-<S9>  -->   for ( TipoDato <S7>; <SE>; <SE> ){ <S8> }
-
+<S9>  -->   for ( <S7>; <SE>; <SE> ){ <S88> }
+            for ( <S7>; <SE>; <SE> ){ }
+---------------------------------------------------------
 //while
-<S10>  -->   while ( <SE> ) { <S8> }
-
+<S10>  -->  while ( <SE> ) { <S88> }
+            while ( <SE> ) { }
+--------------------------------------------------------
 //do while
-<S11> -->   { <S8> } while ( <SE> );
-
+<S11> -->   do { <S88> } while ( <SE> );
+            do { } while ( <SE> );
+--------------------------------------------------------
 //if
-<S12> -->   ( <SE> ) { <S8> } <S13>
+<S12> -->   if ( <SE> ) { <S88> } <S133>
+            if ( <SE> ) { } <S133>
+            if ( <SE> ) { <S88> }
+            if ( <SE> ) { }
 
 //else if || else
-<S13> -->   else <S13'>
-            epsilon
-
-<S13'>-->   if ( <SE> ) { <S8> } <S13>
-            { <S8> }
-
-//Asignacion && llamadametodos
-<S14> -->   ID = <SE>
-            ( <S6> )
-            epsilon
-
-//EXPRESION
-<SE>  -->   ( <SE> ) <SE'>
-            Numero <SE'>
-            ID <SE'>
-            Cadena <SE'>
-            booleano
-            ! <SE>
-            - <SE>
-            epsilon
-
-<SE'> -->   && <SE>
-            || <SE>
-            ^ <SE>
-            > <SE>
-            < <SE>
-            >= <SE>
-            <= <SE>
-            == <SE>
-            != <SE>
-            + <SE>
-            - <SE>
-            * <SE>
-            / <SE>
-            ++
-            --
-            epsilon
-
-//Posible
+<S133>-->   <S133> <S113>
+            <S113>
+            
+<S113>-->   else if ( <SE> ) { <S88> }
+            else if ( <SE> ) { }
+            else { <S88> }
+            else { } 
+----------------------------------------------------------            
+//Llamada de metodos
+<S15> -->   ID ( <S66> ) ;
+            ID ();
+----------------------------------------------------------
+<S16> -->   System . out . print( <SE> );
+            System . out . println( <Se> );
+            System . out . println( );
+----------------------------------------------------------
 <TipoDato>-->   int
                 String
                 boolean
                 double
                 char
+-----------------------------------------------------------                
+//EXPRESION
+<SE'> -->   <SE> && <SE>
+            <SE> || <SE>
+            <SE> ^ <SE>
+            <SE> > <SE>
+            <SE> < <SE>
+            <SE> >= <SE>
+            <SE> <= <SE>
+            <SE> == <SE>
+            <SE> != <SE>
+            <SE> + <SE>
+            <SE> - <SE>
+            <SE> * <SE>
+            <SE> / <SE>
+            ! <SE>
+            - <SE>
+            <SE> ++
+            <SE> --
+            ( <SE> )
+            Numero 
+            ID
+            Cadena
+            Caracter
+            True
+            False
+--------------------------------------------------------------
