@@ -1,6 +1,7 @@
 // Constantes para los tipos de 'valores' que reconoce nuestra gramática.
 const TIPO_VALOR = {
-	NUMERO:         'VAL_NUMERO',
+    ENTERO:         'VAL_ENTERO',
+    DECIMAL:        'VAL_DECIMAL',
 	IDENTIFICADOR:  'VAL_IDENTIFICADOR',
     CADENA:         'VAL_CADENA',
     CARACTER:       'VAL_CARACTER',
@@ -22,8 +23,8 @@ const TIPO_OPERACION = {
 	MAYOR_QUE:      'OP_MAYOR_QUE',
     MENOR_QUE:      'OP_MENOR_QUE',
     IGUAL:          'OP_IGUAL_IGUAL',
-    MAYOR_IGUAL :   'OP_MAYOR_IGUAL',
-    MENOR_IGUAL :   'OP_MENOR_IGUAL',
+    MAYOR_IGUAL:    'OP_MAYOR_IGUAL',
+    MENOR_IGUAL:    'OP_MENOR_IGUAL',
     NO_IGUAL :      'OP_NO_IGUAL',
 
     AND :           'OP_AND',
@@ -73,9 +74,6 @@ function nuevaOperacion(operandoIzq, operandoDer, tipo) {
 		tipo: tipo
 	}
 }
-
-
-
 /**
  * El objetivo de esta API es proveer las funciones necesarias para la construcción de operaciones e instrucciones.
  */
@@ -345,6 +343,7 @@ const instruccionesAPI = {
     /**
      * Creo un objeto para el main
      * @param {*} _public
+     * @param {*} _static
      * @param {*} _void 
      * @param {*} _main
      * @param {*} _P_ABRE
@@ -357,10 +356,11 @@ const instruccionesAPI = {
      * @param {*} _Sentencias
      * @param {*} _LL_CIERRA
      */
-    nuevoMAIN: function(_public, _void, _main, _P_ABRE, _String, _C_ABRE, _C_CIERRA, _args, _P_CIERRA, _LL_ABRE, _Sentencias, _LL_CIERRA){
+    nuevoMAIN: function(_public, _static, _void, _main, _P_ABRE, _String, _C_ABRE, _C_CIERRA, _args, _P_CIERRA, _LL_ABRE,_Sentencias,_LL_CIERRA){
         return{
             tipoIns: TIPO_INSTRUCCION.MAIN,
             _public : _public,
+            _static: _static,
             _void: _void,
             _main : _main,
             _P_ABRE : _P_ABRE,
@@ -371,12 +371,13 @@ const instruccionesAPI = {
             _P_CIERRA : _P_CIERRA,
             _LL_ABRE : _LL_ABRE,
             _Sentencias: _Sentencias,
-            _LL_CIERRA: _LL_CIERRA
+            _LL_CIERRA: _LL_CIERRA 
         }
     },
     /**
      * Creo un objeto para el main
      * @param {*} _public
+     * @param {*} _static
      * @param {*} _void 
      * @param {*} _main
      * @param {*} _P_ABRE
@@ -388,10 +389,11 @@ const instruccionesAPI = {
      * @param {*} _LL_ABRE
      * @param {*} _LL_CIERRA
      */
-    nuevoMAIN_S: function(_public, _void, _main, _P_ABRE, _String, _C_ABRE, _C_CIERRA, _args, _P_CIERRA, _LL_ABRE,_LL_CIERRA){
+    nuevoMAIN_S: function(_public, _static, _void, _main, _P_ABRE, _String, _C_ABRE, _C_CIERRA, _args, _P_CIERRA, _LL_ABRE,_LL_CIERRA){
         return{
             tipoIns: TIPO_INSTRUCCION.MAIN,
             _public : _public,
+            _static: _static,
             _void: _void,
             _main : _main,
             _P_ABRE : _P_ABRE,
@@ -467,7 +469,7 @@ const instruccionesAPI = {
      * @param {*} _LD
      * @param {*} _PyC
      */
-    nuevoD_E: function(_Type, _LD, _PyC){
+    nuevoDEC: function(_Type, _LD, _PyC){
         return{
             tipoIns: TIPO_INSTRUCCION.DECLARACION,
             _Type: _Type,
@@ -710,32 +712,24 @@ const instruccionesAPI = {
      * Creo un objeto para la sentencia for
      * @param {*} _FOR
      * @param {*} _P_ABRE
-     * @param {*} _Type
-     * @param {*} _ID
-     * @param {*} _Igual
+     * @param {*} _DEC
      * @param {*} _expresion1
-     * @param {*} _PyC1
-     * @param {*} _expresion2
      * @param {*} _PyC2
-     * @param {*} _expresion3
+     * @param {*} _expresion2
      * @param {*} _P_CIERRA
      * @param {*} _LL_ABRE
      * @param {*} _Sentencias
      * @param {*} _LL_CIERRA
      */
-    nuevoFor: function(_FOR, _P_ABRE, _Type, _ID, _Igual, _expresion1, _PyC1, _expresion2, _PyC2, _expresion3, _P_CIERRA, _LL_ABRE, _Sentencias, _LL_CIERRA){
+    nuevoFor: function(_FOR, _P_ABRE, _DEC, _expresion1, _PyC2, _expresion2, _P_CIERRA, _LL_ABRE, _Sentencias, _LL_CIERRA){
         return{
             tipoIns: TIPO_INSTRUCCION.FOR,
             _FOR: _FOR,
             _P_ABRE: _P_ABRE,
-            _Type: _Type,
-            _ID: _ID,
-            _Igual: _Igual,
+            _DEC: _DEC,
             _expresion1: _expresion1,
-            _PyC1: _PyC1,
-            _expresion2: _expresion2,
             _PyC2: _PyC2,
-            _expresion3: _expresion3,
+            _expresion2: _expresion2,
             _P_CIERRA: _P_CIERRA,
             _LL_ABRE: _LL_ABRE, 
             _Sentencias: _Sentencias,
@@ -746,31 +740,23 @@ const instruccionesAPI = {
      * Creo un objeto para la sentencia for vacio
      * @param {*} _FOR
      * @param {*} _P_ABRE
-     * @param {*} _Type
-     * @param {*} _ID
-     * @param {*} _Igual
+     * @param {*} _DEC
      * @param {*} _expresion1
-     * @param {*} _PyC1
-     * @param {*} _expresion2
      * @param {*} _PyC2
-     * @param {*} _expresion3
+     * @param {*} _expresion2
      * @param {*} _P_CIERRA
      * @param {*} _LL_ABRE
      * @param {*} _LL_CIERRA
      */
-    nuevoForV: function(_FOR, _P_ABRE, _Type, _ID, _Igual, _expresion1, _PyC1, _expresion2, _PyC2, _expresion3, _P_CIERRA, _LL_ABRE, _LL_CIERRA){
+    nuevoForV: function(_FOR, _P_ABRE, _DEC, _expresion1, _PyC2, _expresion2, _P_CIERRA, _LL_ABRE, _LL_CIERRA){
         return{
             tipoIns: TIPO_INSTRUCCION.FOR,
             _FOR: _FOR,
             _P_ABRE: _P_ABRE,
-            _Type: _Type,
-            _ID: _ID,
-            _Igual: _Igual,
+            _DEC: _DEC,
             _expresion1: _expresion1,
-            _PyC1: _PyC1,
-            _expresion2: _expresion2,
             _PyC2: _PyC2,
-            _expresion3: _expresion3,
+            _expresion2: _expresion2,
             _P_CIERRA: _P_CIERRA,
             _LL_ABRE: _LL_ABRE, 
             _LL_CIERRA: _LL_CIERRA

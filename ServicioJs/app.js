@@ -10,6 +10,7 @@ app.use(bodyParser.urlencoded({/*limit: "50mb", */extended: false}));
 app.use(bodyParser.json({/*limit: '50mb', */extended: false}));
 app.use(routes);
 
-app.listen(8080, function () {
+app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
+

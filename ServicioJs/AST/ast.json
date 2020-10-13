@@ -1,0 +1,1045 @@
+[
+  {
+    "tipoIns": "INSTR_CLASS",
+    "_public": "public",
+    "_clase": "class",
+    "_ID": "JavaApplication1",
+    "_LL_ABRE": "{",
+    "_AyM": [
+      {
+        "tipoIns": "INSTR_DECLA",
+        "_Type": "int",
+        "_LD": [
+          {
+            "_ID": "x",
+            "_Igual": "=",
+            "_expresion": {
+              "operandoIzq": {
+                "tipo": "5",
+                "valor": "VAL_DECIMAL"
+              },
+              "operandoDer": {
+                "tipo": "10",
+                "valor": "VAL_DECIMAL"
+              },
+              "tipo": "OP_SUMA"
+            }
+          }
+        ],
+        "_PyC": ";"
+      },
+      {
+        "tipoIns": "INSTR_MAIN",
+        "_public": "public",
+        "_static": "static",
+        "_void": "void",
+        "_main": "main",
+        "_P_ABRE": "(",
+        "_String": "String",
+        "_C_ABRE": "[",
+        "_C_CIERRA": "]",
+        "_args": "args",
+        "_P_CIERRA": ")",
+        "_LL_ABRE": "{",
+        "_LL_CIERRA": "}"
+      },
+      {
+        "tipoIns": "INSTR_IMETODO",
+        "_public": "public",
+        "_S4": "boolean",
+        "_ID": "validarNumero",
+        "_P_ABRE": "(",
+        "_Parametros": [
+          {
+            "_Type": "String",
+            "_ID": "validarNum"
+          }
+        ],
+        "_P_CIERRA": ")",
+        "_LL_ABRE": "{",
+        "_Sentencias": [
+          {
+            "tipoIns": "INSTR_DECLA",
+            "_Type": "int",
+            "_LD": [
+              {
+                "_ID": "num",
+                "_Igual": "=",
+                "_expresion": {
+                  "tipo": "0",
+                  "valor": "VAL_DECIMAL"
+                }
+              }
+            ],
+            "_PyC": ";"
+          },
+          {
+            "tipoIns": "INSTR_IF",
+            "_if": "if",
+            "_P_ABRE": "(",
+            "_expresion": {
+              "operandoIzq": {
+                "tipo": "num",
+                "valor": "VAL_IDENTIFICADOR"
+              },
+              "operandoDer": {
+                "tipo": "0",
+                "valor": "VAL_DECIMAL"
+              },
+              "tipo": "OP_IGUAL_IGUAL"
+            },
+            "_P_CIERRA": ")",
+            "_LL_ABRE": "{",
+            "_Sentencias": [
+              {
+                "tipoIns": "INSTR_RETURN",
+                "_return": "return",
+                "_expresion": {
+                  "tipo": "true",
+                  "valor": "VAL_TRUE"
+                },
+                "_PyC": ";"
+              }
+            ],
+            "_LL_CIERRA": "}",
+            "_else": [
+              {
+                "_else": "else",
+                "_LL_ABRE": "{",
+                "_Sentencias": [
+                  {
+                    "tipoIns": "INSTR_PRINT",
+                    "_system": "System",
+                    "_punto": ".",
+                    "_out": "out",
+                    "_punto1": ".",
+                    "_print": "println",
+                    "_P_ABRE": "(",
+                    "_expresion": {
+                      "tipo": "* Favor Intentelo de nuevo: ",
+                      "valor": "VAL_CADENA"
+                    },
+                    "_P_CIERRA": ")",
+                    "_PyC": ";"
+                  },
+                  {
+                    "tipoIns": "INSTR_RETURN",
+                    "_return": "return",
+                    "_expresion": {
+                      "tipo": "false",
+                      "valor": "VAL_FALSE"
+                    },
+                    "_PyC": ";"
+                  }
+                ],
+                "_LL_CIERRA": "}"
+              }
+            ]
+          }
+        ],
+        "_LL_CIERRA": "}"
+      },
+      {
+        "tipoIns": "INSTR_IMETODO",
+        "_public": "public",
+        "_S4": "void",
+        "_ID": "Menu",
+        "_P_ABRE": "(",
+        "_P_CIERRA": ")",
+        "_LL_ABRE": "{",
+        "_Sentencias": [
+          {
+            "tipoIns": "INSTR_DECLA",
+            "_Type": "String",
+            "_LD": [
+              {
+                "_ID": "yu"
+              }
+            ],
+            "_PyC": ";"
+          },
+          {
+            "tipoIns": "INSTR_DECLA",
+            "_Type": "int",
+            "_LD": [
+              {
+                "_ID": "yustring",
+                "_Igual": "=",
+                "_expresion": {
+                  "tipo": "0",
+                  "valor": "VAL_DECIMAL"
+                }
+              }
+            ],
+            "_PyC": ";"
+          },
+          {
+            "tipoIns": "INSTR_PRINT",
+            "_system": "System",
+            "_punto": ".",
+            "_out": "out",
+            "_punto1": ".",
+            "_print": "println",
+            "_P_ABRE": "(",
+            "_expresion": {
+              "tipo": "BIENVENIDO AL JUEGO DE",
+              "valor": "VAL_CADENA"
+            },
+            "_P_CIERRA": ")",
+            "_PyC": ";"
+          },
+          {
+            "tipoIns": "INSTR_DO",
+            "_do": "do",
+            "_LL_ABRE": "{",
+            "_Sentencias": [
+              {
+                "tipoIns": "INSTR_PRINT",
+                "_system": "System",
+                "_punto": ".",
+                "_out": "out",
+                "_punto1": ".",
+                "_print": "println",
+                "_P_ABRE": "(",
+                "_expresion": {
+                  "tipo": "         MENU       ",
+                  "valor": "VAL_CADENA"
+                },
+                "_P_CIERRA": ")",
+                "_PyC": ";"
+              },
+              {
+                "tipoIns": "INSTR_PRINT",
+                "_system": "System",
+                "_punto": ".",
+                "_out": "out",
+                "_punto1": ".",
+                "_print": "println",
+                "_P_ABRE": "(",
+                "_expresion": {
+                  "tipo": "1. lista de pokemones",
+                  "valor": "VAL_CADENA"
+                },
+                "_P_CIERRA": ")",
+                "_PyC": ";"
+              },
+              {
+                "tipoIns": "INSTR_PRINT",
+                "_system": "System",
+                "_punto": ".",
+                "_out": "out",
+                "_punto1": ".",
+                "_print": "println",
+                "_P_ABRE": "(",
+                "_expresion": {
+                  "tipo": "2. Editar Pokemones",
+                  "valor": "VAL_CADENA"
+                },
+                "_P_CIERRA": ")",
+                "_PyC": ";"
+              },
+              {
+                "tipoIns": "INSTR_PRINT",
+                "_system": "System",
+                "_punto": ".",
+                "_out": "out",
+                "_punto1": ".",
+                "_print": "println",
+                "_P_ABRE": "(",
+                "_expresion": {
+                  "tipo": "3. EMPEZAR BATALLA",
+                  "valor": "VAL_CADENA"
+                },
+                "_P_CIERRA": ")",
+                "_PyC": ";"
+              },
+              {
+                "tipoIns": "INSTR_PRINT",
+                "_system": "System",
+                "_punto": ".",
+                "_out": "out",
+                "_punto1": ".",
+                "_print": "println",
+                "_P_ABRE": "(",
+                "_expresion": {
+                  "tipo": "4. Registro de las partidas",
+                  "valor": "VAL_CADENA"
+                },
+                "_P_CIERRA": ")",
+                "_PyC": ";"
+              },
+              {
+                "tipoIns": "INSTR_PRINT",
+                "_system": "System",
+                "_punto": ".",
+                "_out": "out",
+                "_punto1": ".",
+                "_print": "println",
+                "_P_ABRE": "(",
+                "_expresion": {
+                  "tipo": "5. Lista de pokemones mas utilizados",
+                  "valor": "VAL_CADENA"
+                },
+                "_P_CIERRA": ")",
+                "_PyC": ";"
+              },
+              {
+                "tipoIns": "INSTR_BREAK",
+                "_break": "break",
+                "_PyC": ";"
+              }
+            ],
+            "_LL_CIERRA": "}",
+            "_while": "while",
+            "_P_ABRE": "(",
+            "_expresion": {
+              "operandoIzq": {
+                "tipo": "yustring",
+                "valor": "VAL_IDENTIFICADOR"
+              },
+              "operandoDer": {
+                "tipo": "7",
+                "valor": "VAL_DECIMAL"
+              },
+              "tipo": "OP_MENOR_IGUAL"
+            },
+            "_P_CIERRA": ")",
+            "_PyC": ";"
+          }
+        ],
+        "_LL_CIERRA": "}"
+      },
+      {
+        "tipoIns": "INSTR_DECLA",
+        "_Type": "double",
+        "_LD": [
+          {
+            "_ID": "lis"
+          }
+        ],
+        "_PyC": ";"
+      },
+      {
+        "tipoIns": "INSTR_IMETODO",
+        "_public": "public",
+        "_S4": "void",
+        "_ID": "lista",
+        "_P_ABRE": "(",
+        "_P_CIERRA": ")",
+        "_LL_ABRE": "{",
+        "_Sentencias": [
+          {
+            "tipoIns": "INSTR_DECLA",
+            "_Type": "int",
+            "_LD": [
+              {
+                "_ID": "primero",
+                "_Igual": "=",
+                "_expresion": {
+                  "tipo": "6",
+                  "valor": "VAL_DECIMAL"
+                }
+              }
+            ],
+            "_PyC": ";"
+          },
+          {
+            "tipoIns": "INSTR_DECLA",
+            "_Type": "int",
+            "_LD": [
+              {
+                "_ID": "ultimo",
+                "_Igual": "=",
+                "_expresion": {
+                  "tipo": "13",
+                  "valor": "VAL_DECIMAL"
+                }
+              }
+            ],
+            "_PyC": ";"
+          },
+          {
+            "tipoIns": "INSTR_FOR",
+            "_FOR": "for",
+            "_P_ABRE": "(",
+            "_DEC": {
+              "tipoIns": "INSTR_DECLA",
+              "_Type": "int",
+              "_LD": [
+                {
+                  "_ID": "i",
+                  "_Igual": "=",
+                  "_expresion": {
+                    "tipo": "0",
+                    "valor": "VAL_DECIMAL"
+                  }
+                }
+              ],
+              "_PyC": ";"
+            },
+            "_expresion1": {
+              "operandoIzq": {
+                "tipo": "i",
+                "valor": "VAL_IDENTIFICADOR"
+              },
+              "operandoDer": {
+                "tipo": "primero",
+                "valor": "VAL_IDENTIFICADOR"
+              },
+              "tipo": "OP_MENOR_QUE"
+            },
+            "_PyC2": ";",
+            "_expresion2": {
+              "operandoIzq": {
+                "tipo": "i",
+                "valor": "VAL_IDENTIFICADOR"
+              },
+              "tipo": "OP_INCRE"
+            },
+            "_P_CIERRA": ")",
+            "_LL_ABRE": "{",
+            "_Sentencias": [
+              {
+                "tipoIns": "INSTR_FOR",
+                "_FOR": "for",
+                "_P_ABRE": "(",
+                "_DEC": {
+                  "tipoIns": "INSTR_DECLA",
+                  "_Type": "int",
+                  "_LD": [
+                    {
+                      "_ID": "j",
+                      "_Igual": "=",
+                      "_expresion": {
+                        "tipo": "6",
+                        "valor": "VAL_DECIMAL"
+                      }
+                    }
+                  ],
+                  "_PyC": ";"
+                },
+                "_expresion1": {
+                  "operandoIzq": {
+                    "tipo": "j",
+                    "valor": "VAL_IDENTIFICADOR"
+                  },
+                  "operandoDer": {
+                    "tipo": "ultimo",
+                    "valor": "VAL_IDENTIFICADOR"
+                  },
+                  "tipo": "OP_MENOR_QUE"
+                },
+                "_PyC2": ";",
+                "_expresion2": {
+                  "operandoIzq": {
+                    "tipo": "j",
+                    "valor": "VAL_IDENTIFICADOR"
+                  },
+                  "tipo": "OP_INCRE"
+                },
+                "_P_CIERRA": ")",
+                "_LL_ABRE": "{",
+                "_Sentencias": [
+                  {
+                    "tipoIns": "INSTR_PRINT",
+                    "_system": "System",
+                    "_punto": ".",
+                    "_out": "out",
+                    "_punto1": ".",
+                    "_println": "println",
+                    "_P_ABRE": "(",
+                    "_P_CIERRA": ")",
+                    "_PyC": ";"
+                  }
+                ],
+                "_LL_CIERRA": "}"
+              }
+            ],
+            "_LL_CIERRA": "}"
+          },
+          {
+            "tipoIns": "INSTR_PRINT",
+            "_system": "System",
+            "_punto": ".",
+            "_out": "out",
+            "_punto1": ".",
+            "_print": "println",
+            "_P_ABRE": "(",
+            "_expresion": {
+              "tipo": "PARA QUE ESCOJER TUS POKEMONES, EMPIEZA BATALLA",
+              "valor": "VAL_CADENA"
+            },
+            "_P_CIERRA": ")",
+            "_PyC": ";"
+          },
+          {
+            "tipoIns": "INSTR_PRINT",
+            "_system": "System",
+            "_punto": ".",
+            "_out": "out",
+            "_punto1": ".",
+            "_print": "println",
+            "_P_ABRE": "(",
+            "_expresion": {
+              "tipo": "",
+              "valor": "VAL_CADENA"
+            },
+            "_P_CIERRA": ")",
+            "_PyC": ";"
+          }
+        ],
+        "_LL_CIERRA": "}"
+      },
+      {
+        "tipoIns": "INSTR_IMETODO",
+        "_public": "public",
+        "_S4": "void",
+        "_ID": "registro",
+        "_P_ABRE": "(",
+        "_P_CIERRA": ")",
+        "_LL_ABRE": "{",
+        "_Sentencias": [
+          {
+            "tipoIns": "INSTR_DECLA",
+            "_Type": "String",
+            "_LD": [
+              {
+                "_ID": "RJ1",
+                "_Igual": "=",
+                "_expresion": {
+                  "tipo": "vector",
+                  "valor": "VAL_CADENA"
+                },
+                "_Coma": ","
+              },
+              {
+                "_ID": "RJ2"
+              }
+            ],
+            "_PyC": ";"
+          },
+          {
+            "tipoIns": "INSTR_FOR",
+            "_FOR": "for",
+            "_P_ABRE": "(",
+            "_DEC": {
+              "tipoIns": "INSTR_DECLA",
+              "_Type": "int",
+              "_LD": [
+                {
+                  "_ID": "i",
+                  "_Igual": "=",
+                  "_expresion": {
+                    "tipo": "0",
+                    "valor": "VAL_DECIMAL"
+                  }
+                }
+              ],
+              "_PyC": ";"
+            },
+            "_expresion1": {
+              "operandoIzq": {
+                "tipo": "i",
+                "valor": "VAL_IDENTIFICADOR"
+              },
+              "operandoDer": {
+                "operandoIzq": {
+                  "tipo": "15",
+                  "valor": "VAL_DECIMAL"
+                },
+                "operandoDer": {
+                  "tipo": "2",
+                  "valor": "VAL_DECIMAL"
+                },
+                "tipo": "OP_SUMA"
+              },
+              "tipo": "OP_MENOR_QUE"
+            },
+            "_PyC2": ";",
+            "_expresion2": {
+              "operandoIzq": {
+                "tipo": "i",
+                "valor": "VAL_IDENTIFICADOR"
+              },
+              "tipo": "OP_INCRE"
+            },
+            "_P_CIERRA": ")",
+            "_LL_ABRE": "{",
+            "_Sentencias": [
+              {
+                "tipoIns": "INSTR_FOR",
+                "_FOR": "for",
+                "_P_ABRE": "(",
+                "_DEC": {
+                  "tipoIns": "INSTR_DECLA",
+                  "_Type": "int",
+                  "_LD": [
+                    {
+                      "_ID": "j",
+                      "_Igual": "=",
+                      "_expresion": {
+                        "tipo": "0",
+                        "valor": "VAL_DECIMAL"
+                      }
+                    }
+                  ],
+                  "_PyC": ";"
+                },
+                "_expresion1": {
+                  "operandoIzq": {
+                    "tipo": "j",
+                    "valor": "VAL_IDENTIFICADOR"
+                  },
+                  "operandoDer": {
+                    "tipo": "34",
+                    "valor": "VAL_DECIMAL"
+                  },
+                  "tipo": "OP_MENOR_QUE"
+                },
+                "_PyC2": ";",
+                "_expresion2": {
+                  "operandoIzq": {
+                    "tipo": "j",
+                    "valor": "VAL_IDENTIFICADOR"
+                  },
+                  "tipo": "OP_INCRE"
+                },
+                "_P_CIERRA": ")",
+                "_LL_ABRE": "{",
+                "_Sentencias": [
+                  {
+                    "tipoIns": "INSTR_IF",
+                    "_if": "if",
+                    "_P_ABRE": "(",
+                    "_expresion": {
+                      "operandoIzq": {
+                        "operandoIzq": {
+                          "operandoIzq": {
+                            "operandoIzq": {
+                              "operandoIzq": {
+                                "operandoIzq": {
+                                  "operandoIzq": {
+                                    "tipo": "RJ1",
+                                    "valor": "VAL_IDENTIFICADOR"
+                                  },
+                                  "operandoDer": {
+                                    "tipo": "matriz",
+                                    "valor": "VAL_CADENA"
+                                  },
+                                  "tipo": "OP_NO_IGUAL"
+                                },
+                                "operandoDer": {
+                                  "operandoIzq": {
+                                    "tipo": "j",
+                                    "valor": "VAL_IDENTIFICADOR"
+                                  },
+                                  "operandoDer": {
+                                    "tipo": "11",
+                                    "valor": "VAL_DECIMAL"
+                                  },
+                                  "tipo": "OP_NO_IGUAL"
+                                },
+                                "tipo": "OP_AND"
+                              },
+                              "operandoDer": {
+                                "operandoIzq": {
+                                  "tipo": "j",
+                                  "valor": "VAL_IDENTIFICADOR"
+                                },
+                                "operandoDer": {
+                                  "tipo": "12",
+                                  "valor": "VAL_DECIMAL"
+                                },
+                                "tipo": "OP_NO_IGUAL"
+                              },
+                              "tipo": "OP_AND"
+                            },
+                            "operandoDer": {
+                              "operandoIzq": {
+                                "tipo": "j",
+                                "valor": "VAL_IDENTIFICADOR"
+                              },
+                              "operandoDer": {
+                                "tipo": "15",
+                                "valor": "VAL_DECIMAL"
+                              },
+                              "tipo": "OP_NO_IGUAL"
+                            },
+                            "tipo": "OP_AND"
+                          },
+                          "operandoDer": {
+                            "operandoIzq": {
+                              "tipo": "j",
+                              "valor": "VAL_IDENTIFICADOR"
+                            },
+                            "operandoDer": {
+                              "tipo": "16",
+                              "valor": "VAL_DECIMAL"
+                            },
+                            "tipo": "OP_NO_IGUAL"
+                          },
+                          "tipo": "OP_AND"
+                        },
+                        "operandoDer": {
+                          "operandoIzq": {
+                            "tipo": "j",
+                            "valor": "VAL_IDENTIFICADOR"
+                          },
+                          "operandoDer": {
+                            "tipo": "17",
+                            "valor": "VAL_DECIMAL"
+                          },
+                          "tipo": "OP_NO_IGUAL"
+                        },
+                        "tipo": "OP_AND"
+                      },
+                      "operandoDer": {
+                        "operandoIzq": {
+                          "tipo": "j",
+                          "valor": "VAL_IDENTIFICADOR"
+                        },
+                        "operandoDer": {
+                          "tipo": "18",
+                          "valor": "VAL_DECIMAL"
+                        },
+                        "tipo": "OP_NO_IGUAL"
+                      },
+                      "tipo": "OP_AND"
+                    },
+                    "_P_CIERRA": ")",
+                    "_LL_ABRE": "{",
+                    "_Sentencias": [
+                      {
+                        "tipoIns": "INSTR_PRINT",
+                        "_system": "System",
+                        "_punto": ".",
+                        "_out": "out",
+                        "_punto1": ".",
+                        "_print": "print",
+                        "_P_ABRE": "(",
+                        "_expresion": {
+                          "operandoIzq": {
+                            "tipo": "RJ1",
+                            "valor": "VAL_IDENTIFICADOR"
+                          },
+                          "operandoDer": {
+                            "tipo": "\\t",
+                            "valor": "VAL_CADENA"
+                          },
+                          "tipo": "OP_SUMA"
+                        },
+                        "_P_CIERRA": ")",
+                        "_PyC": ";"
+                      }
+                    ],
+                    "_LL_CIERRA": "}"
+                  }
+                ],
+                "_LL_CIERRA": "}"
+              },
+              {
+                "tipoIns": "INSTR_PRINT",
+                "_system": "System",
+                "_punto": ".",
+                "_out": "out",
+                "_punto1": ".",
+                "_print": "println",
+                "_P_ABRE": "(",
+                "_expresion": {
+                  "tipo": "",
+                  "valor": "VAL_CADENA"
+                },
+                "_P_CIERRA": ")",
+                "_PyC": ";"
+              }
+            ],
+            "_LL_CIERRA": "}"
+          },
+          {
+            "tipoIns": "INSTR_PRINT",
+            "_system": "System",
+            "_punto": ".",
+            "_out": "out",
+            "_punto1": ".",
+            "_print": "println",
+            "_P_ABRE": "(",
+            "_expresion": {
+              "tipo": "",
+              "valor": "VAL_CADENA"
+            },
+            "_P_CIERRA": ")",
+            "_PyC": ";"
+          }
+        ],
+        "_LL_CIERRA": "}"
+      },
+      {
+        "tipoIns": "INSTR_IMETODO",
+        "_public": "public",
+        "_S4": "void",
+        "_ID": "elmio",
+        "_P_ABRE": "(",
+        "_Parametros": [
+          {
+            "_Type": "String",
+            "_ID": "h",
+            "_Coma": ","
+          },
+          {
+            "_Type": "int",
+            "_ID": "ho"
+          }
+        ],
+        "_P_CIERRA": ")",
+        "_LL_ABRE": "{",
+        "_Sentencias": [
+          {
+            "tipoIns": "INSTR_DECLA",
+            "_Type": "boolean",
+            "_LD": [
+              {
+                "_ID": "continuar",
+                "_Igual": "=",
+                "_expresion": {
+                  "tipo": "true",
+                  "valor": "VAL_TRUE"
+                }
+              }
+            ],
+            "_PyC": ";"
+          },
+          {
+            "tipoIns": "INSTR_WHILE",
+            "_while": "while",
+            "_P_ABRE": "(",
+            "_expresion": {
+              "tipo": "continuar",
+              "valor": "VAL_IDENTIFICADOR"
+            },
+            "_P_CIERRA": ")",
+            "_LL_ABRE": "{",
+            "_Sentencias": [
+              {
+                "tipoIns": "INSTR_FOR",
+                "_FOR": "for",
+                "_P_ABRE": "(",
+                "_DEC": {
+                  "tipoIns": "INSTR_DECLA",
+                  "_Type": "int",
+                  "_LD": [
+                    {
+                      "_ID": "i",
+                      "_Igual": "=",
+                      "_expresion": {
+                        "tipo": "0",
+                        "valor": "VAL_DECIMAL"
+                      }
+                    }
+                  ],
+                  "_PyC": ";"
+                },
+                "_expresion1": {
+                  "operandoIzq": {
+                    "tipo": "i",
+                    "valor": "VAL_IDENTIFICADOR"
+                  },
+                  "operandoDer": {
+                    "tipo": "15",
+                    "valor": "VAL_DECIMAL"
+                  },
+                  "tipo": "OP_MENOR_QUE"
+                },
+                "_PyC2": ";",
+                "_expresion2": {
+                  "operandoIzq": {
+                    "tipo": "i",
+                    "valor": "VAL_IDENTIFICADOR"
+                  },
+                  "tipo": "OP_INCRE"
+                },
+                "_P_CIERRA": ")",
+                "_LL_ABRE": "{",
+                "_Sentencias": [
+                  {
+                    "tipoIns": "INSTR_PRINT",
+                    "_system": "System",
+                    "_punto": ".",
+                    "_out": "out",
+                    "_punto1": ".",
+                    "_print": "print",
+                    "_P_ABRE": "(",
+                    "_expresion": {
+                      "operandoIzq": {
+                        "operandoIzq": {
+                          "tipo": "i",
+                          "valor": "VAL_IDENTIFICADOR"
+                        },
+                        "operandoDer": {
+                          "tipo": ",",
+                          "valor": "VAL_CADENA"
+                        },
+                        "tipo": "OP_SUMA"
+                      },
+                      "operandoDer": {
+                        "tipo": "\\t",
+                        "valor": "VAL_CADENA"
+                      },
+                      "tipo": "OP_SUMA"
+                    },
+                    "_P_CIERRA": ")",
+                    "_PyC": ";"
+                  },
+                  {
+                    "tipoIns": "INSTR_CONTINUE",
+                    "_continue": "continue",
+                    "_PyC": ";"
+                  }
+                ],
+                "_LL_CIERRA": "}"
+              },
+              {
+                "tipoIns": "INSTR_ASIG",
+                "_ID": "continuar",
+                "_Igual": "=",
+                "_expresion": {
+                  "tipo": "false",
+                  "valor": "VAL_FALSE"
+                },
+                "_PyC": ";"
+              }
+            ],
+            "_LL_CIERRA": "}"
+          }
+        ],
+        "_LL_CIERRA": "}"
+      },
+      {
+        "tipoIns": "INSTR_IMETODO",
+        "_public": "public",
+        "_S4": "char",
+        "_ID": "el",
+        "_P_ABRE": "(",
+        "_Parametros": [
+          {
+            "_Type": "boolean",
+            "_ID": "a"
+          }
+        ],
+        "_P_CIERRA": ")",
+        "_LL_ABRE": "{",
+        "_Sentencias": [
+          {
+            "tipoIns": "INSTR_DECLA",
+            "_Type": "char",
+            "_LD": [
+              {
+                "_ID": "hh",
+                "_Igual": "=",
+                "_expresion": {
+                  "tipo": "j",
+                  "valor": "VAL_CARACTER"
+                }
+              }
+            ],
+            "_PyC": ";"
+          },
+          {
+            "tipoIns": "INSTR_IF",
+            "_if": "if",
+            "_P_ABRE": "(",
+            "_expresion": {
+              "operandoIzq": {
+                "tipo": "hh",
+                "valor": "VAL_IDENTIFICADOR"
+              },
+              "operandoDer": {
+                "tipo": "i",
+                "valor": "VAL_CARACTER"
+              },
+              "tipo": "OP_IGUAL_IGUAL"
+            },
+            "_P_CIERRA": ")",
+            "_LL_ABRE": "{",
+            "_Sentencias": [
+              {
+                "tipoIns": "INSTR_RETURN",
+                "_return": "return",
+                "_expresion": {
+                  "tipo": "i",
+                  "valor": "VAL_CARACTER"
+                },
+                "_PyC": ";"
+              }
+            ],
+            "_LL_CIERRA": "}",
+            "_else": [
+              {
+                "_else": "else",
+                "_if": "if",
+                "_P_ABRE": "(",
+                "_expresion": {
+                  "operandoIzq": {
+                    "tipo": "hh",
+                    "valor": "VAL_IDENTIFICADOR"
+                  },
+                  "operandoDer": {
+                    "tipo": "k",
+                    "valor": "VAL_CARACTER"
+                  },
+                  "tipo": "OP_IGUAL_IGUAL"
+                },
+                "_P_CIERRA": ")",
+                "_LL_ABRE": "{",
+                "_Sentencias": [
+                  {
+                    "tipoIns": "INSTR_RETURN",
+                    "_return": "return",
+                    "_expresion": {
+                      "tipo": "k",
+                      "valor": "VAL_CARACTER"
+                    },
+                    "_PyC": ";"
+                  }
+                ],
+                "_LL_CIERRA": "}"
+              },
+              {
+                "_else": "else",
+                "_LL_ABRE": "{",
+                "_Sentencias": [
+                  {
+                    "tipoIns": "INSTR_DECLA",
+                    "_Type": "double",
+                    "_LD": [
+                      {
+                        "_ID": "mira",
+                        "_Igual": "=",
+                        "_expresion": {
+                          "tipo": "0.1",
+                          "valor": "VAL_DECIMAL"
+                        }
+                      }
+                    ],
+                    "_PyC": ";"
+                  }
+                ],
+                "_LL_CIERRA": "}"
+              }
+            ]
+          },
+          {
+            "tipoIns": "INSTR_RETURN",
+            "_return": "return",
+            "_expresion": {
+              "tipo": "hh",
+              "valor": "VAL_IDENTIFICADOR"
+            },
+            "_PyC": ";"
+          }
+        ],
+        "_LL_CIERRA": "}"
+      }
+    ],
+    "_LL_CIERRA": "}"
+  }
+]

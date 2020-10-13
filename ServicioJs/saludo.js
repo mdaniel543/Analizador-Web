@@ -1,6 +1,6 @@
 
 function saludar(req, res) {
-    return res.send({saludo: 'HOLAa'});
+    return res.send({saludo: 'HOLA'});
 }
 
 module.exports = saludar;

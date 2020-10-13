@@ -10,7 +10,7 @@ const analizar = require('./parser');
 Router.get('/saludo', saludo);
 
 // router post
-Router.post('/analizar', analizar);
+Router.get('/analizar', analizar);
 
 
 module.exports = Router;

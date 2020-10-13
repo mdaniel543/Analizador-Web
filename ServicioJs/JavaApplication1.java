@@ -1,28 +1,13 @@
-
 public class JavaApplication1 {
     
-    int x = 0;
-    String pikachu = "                                              \n"
-            + "                        \\:.             .:/\n"
-            + "                         \\``._________.''/ \n"
-            + "                          \\             / \n"
-            + "                  .--.--, / .':.   .':. \\\n"
-            + "                 /__:  /  | '::' . '::' |\n"
-            + "                    / /   |`.   ._.   .'|\n"
-            + "                   / /    |.'         '.|\n"
-            + "                  /___-_-,|.\\  \\   /  /.|\n"
-            + "                       // |''\\.;   ;,/ '|\n"
-            + "                       `==|:=         =:|\n"
-            + "                          `.          .'\n"
-            + "                            :-._____.-:\n"
-            + "                           `''       `'' \n";
+    int x = 5 + 10;
+
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        
+        int l;
     }
     public boolean validarNumero(String validarNum) {
         int num = 0;
@@ -50,7 +35,7 @@ public class JavaApplication1 {
         } while (yustring <= 7);
     }
     double lis;
-     public void lista() {
+    public void lista() {
         // for que me sirve para recorrer la matriz y que la imprima 
         int primero = 6;
         int ultimo = 13;
