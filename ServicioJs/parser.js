@@ -1,11 +1,10 @@
-var fs = require('fs');
 var parser = require('./Analizador/Gramatica');
 
 function analizar(req, res) {
-    const entrada = fs.readFileSync('./JavaApplication1.java');
-    console.log(entrada.toString());
-    ast = parser.parse(entrada.toString());
-    return res.send(JSON.stringify(ast, null, 2));
+    const entrada  = req.body.contenido;
+    console.log(entrada);
+    if(req.err) throw err;
+    return res.send({resultado: parser.parse(entrada.toString())});
 }
 
 module.exports = analizar;

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cliente</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+ 
+  <link href="./public/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Bootstrap css -->
+  <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+  <link href="./public/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="./public/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="./public/lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+  <link href="./public/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="./public/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="./public/lib/modal-video/css/modal-video.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="./public/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header id="header" class="header header-hide">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#body" class="scrollto"><span>Compi</span>ladores<span>1</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Inicio</a></li>
+          <li><a href="#testimonials">Desarrollo</a></li>
+          <li class="menu-has-children"><a href="">Menu</a>
+            <ul>
+              <li><a href="../upload">Abrir</a></li>
+              <li><a href="#">Nuevo</a></li>
+              <li><a href="#">Guardar</a></li>
+              <li><a href="#">Guardar Como</a></li>
+            </ul>
+          </li>
+          <li class="menu-has-children"><a href="">Descargar</a>
+            <ul>
+              <li><a href="#">Ambos</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">Phyton</a></li>
+            </ul>
+          </li>
+          <li><a href="../node">ANALIZAR</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+
+      
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="hero" class="wow fadeIn">
+    <div class="hero-container">
+      <h1>Bienvenido a Translator in Docker</h1>
+      <h2>Aplicando los conocimientos sobre el analizador léxico y sintáctico, para la implementación de un traductor como servicio</h2>
+      <img src="./public/img/hero-img.png" alt="Hero Imgs">
+      <form action="/upload" method="post" enctype="multipart/form-data" class="uploadForm">
+        <input class="uploadForm__input" type="file" name="file" id="inputFile">
+        <label class="uploadForm__label" for="inputFile">
+            <i class="fa fa-upload uploadForm__icon"></i> Select a file
+        </label>
+        <input class="btn-get-started scrollto" type="submit" name="Cargar" >
+    </form>
+    <div style="height: 30px">
+
+    </div>
+    
+    </div>
+  </section><!-- #hero -->
+  
+  <!--==========================
+    Newsletter Section
+  ============================-->
+  <section id="newsletter" class="newsletter text-center wow fadeInUp">
+    <div class="overlay padd-section">
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-md-9 col-lg-6">
+            <form class="form-inline" method="POST" action="#">
+              <h1><a class="scrollto"></a><span>Daniel </span>Rodriguez <span>201709450</span></h1>
+            </form>
+
+          </div>
+        </div>
+          <ul class="list-unstyled">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+      </div>
+    </div>
+  </section>
+
+
+<!--==========================
+    Testimonials Section
+  ============================-->
+
+  <section id="testimonials" class="padd-section text-center wow fadeInUp">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form action="/analizar" method="post">
+            <div class="testimonials-content">
+              <div class="form-group">
+                <textarea id="contenido-archivo" name = "contenido-archivo" class="form-control"  rows="35" data-rule="required"  placeholder="Texto a Traducir"></textarea>
+              </div> 
+            </div>
+            <div style="height: 40px;"></div>
+            <input class="btn-get-started scrollto" type="submit" value="Enviar"> 
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    
+  </script>
+  <!--==========================
+    Get Started Section
+  ============================-->
+
+
+  <!--==========================
+    About Us Section
+  ============================-->
+
+
+  <!--==========================
+    Features Section
+  ============================-->
+
+  
+
+  <!--==========================
+    Screenshots Section
+  ============================-->
+  
+
+  <!--==========================
+    Video Section
+  ============================-->
+
+
+
+  <!--==========================
+    Team Section
+  ============================-->
+  
+
+  
+
+  <!--==========================
+    Pricing Table Section
+  ============================-->
+
+
+  <!--==========================
+    Blog Section
+  ============================-->
+
+
+  <!--==========================
+    Contact Section
+  ============================-->
+  <section id="contact" class="padd-section wow fadeInUp">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Consolas</h2>
+        <p class="separator">Respuestas del traductor</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-lg-6 col-md-8">
+
+          <div class="form-group">
+            <textarea class="form-control" name="Texto" rows="18" data-rule="required"  placeholder="JavaScript" readonly = "true"></textarea>
+          </div>  
+
+        </div>
+
+        <div class="col-lg-6 col-md-8">
+          <div class="form-group">
+            <textarea class="form-control" name="Texto" rows="18" data-rule="required"  placeholder="Phyton" readonly = "true"></textarea>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </section><!-- #contact -->
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer class="footer">
+    <div class="container">
+      
+    </div>
+
+    <div class="copyrights">
+      <div class="container">
+        <p>&copy; Copyrights USAC. All rights reserved.</p>
+        <div class="credits">
+          <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eStartup
+          -->
+          Designed by <a href="Daniel Rodriguez">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./public/lib/jquery/jquery.min.js"></script>
+  <script src="./public/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="./public/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./public/lib/superfish/hoverIntent.js"></script>
+  <script src="./public/lib/superfish/superfish.min.js"></script>
+  <script src="./public/lib/easing/easing.min.js"></script>
+  <script src="./public/lib/modal-video/js/modal-video.js"></script>
+  <script src="./public/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="./public/lib/wow/wow.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="./public/contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="./public/js/main.js"></script>
+
+</body>
+</html>
