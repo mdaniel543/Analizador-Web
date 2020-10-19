@@ -115,14 +115,15 @@ S
 INICIO
     : INICIO INI { $1.push($2); $$ = $1; }
     | INI        { $$ = [$1]; }
-    | error  { console.error('Este es un error sintactico: ' + yytext + ', en la linea: ' + this._$.first_line + ', en la columna: ' + this._$.first_column);
-    }
 ;
 INI
     : PR_public PR_class ID LL_ABRE LL_CIERRA               { $$ = instruccionesAPI.nuevoClaseV($1, $2, $3, $4, $5);}
     | PR_public PR_interface ID LL_ABRE LL_CIERRA           { $$ = instruccionesAPI.nuevoInterV($1, $2, $3, $4, $5); }    
     | PR_public PR_class ID LL_ABRE LC LL_CIERRA            { $$ = instruccionesAPI.nuevoClase($1, $2, $3, $4, $5, $6); }
     | PR_public PR_interface ID LL_ABRE LI LL_CIERRA        { $$ = instruccionesAPI.nuevoInter($1, $2, $3, $4, $5, $6); }
+    | error  { console.error('Este es un error sintactico: ' + yytext + ', en la linea: ' + this._$.first_line + ', en la columna: ' + this._$.first_column);
+    $$ = 'Este es un error sintactico: ' + yytext + ', en la linea: ' + this._$.first_line + ', en la columna: ' + this._$.first_column;
+    }    
 ;
 LC
     : LC C  { $1.push($2); $$ = $1; }
@@ -163,8 +164,8 @@ LP
 P 
     : EXP { $$ = instruccionesAPI.nuevoPA_E($1);}
     | EXP Coma { $$ = instruccionesAPI.nuevoPA_E_C($1,$2);}
-    | TIPO ID { $$ = instruccionesAPI.nuevoPA($1,$2);}
-    | TIPO ID Coma { $$ = instruccionesAPI.nuevoPA_C($1,$2,$3);}
+    | TIPO EXP { $$ = instruccionesAPI.nuevoPA($1,$2);}
+    | TIPO EXP Coma { $$ = instruccionesAPI.nuevoPA_C($1,$2,$3);}
 ;
 DEC
     : TIPO LDEC PyC { $$ = instruccionesAPI.nuevoDEC($1, $2, $3);}
@@ -192,8 +193,7 @@ ASIG
 LINS 
     : LINS INS { $1.push($2); $$ = $1; }
     | INS { $$ = [$1]; }
-    | error  { console.error('Este es un error sintactico: ' + yytext + ', en la linea: ' + this._$.first_line + ', en la columna: ' + this._$.first_column);
-    }
+
 ;
 INS
     : FOR { $$ = $1; }
@@ -208,6 +208,9 @@ INS
     | PR_continue PyC { $$ = instruccionesAPI.nuevoContinue($1, $2); }
     | PR_return EXP PyC { $$ = instruccionesAPI.nuevoreturn_e($1, $2, $3); }
     | PR_return PyC { $$ = instruccionesAPI.nuevoreturn($1, $2, $3);}
+    | error  { console.error('Este es un error sintactico: ' + yytext + ', en la linea: ' + this._$.first_line + ', en la columna: ' + this._$.first_column);
+    $$ = 'Este es un error sintactico: ' + yytext + ', en la linea: ' + this._$.first_line + ', en la columna: ' + this._$.first_column;
+    }    
 ;
 FOR 
     : PR_for P_ABRE DEC EXP PyC EXP P_CIERRA LL_ABRE LL_CIERRA { $$ = instruccionesAPI.nuevoForV($1,$2,$3,$4,$5,$6,$7,$8,$9);}
@@ -277,8 +280,8 @@ EXP
     | DECIMAL                               { $$ = instruccionesAPI.nuevoValor(TIPO_VALOR.DECIMAL, $1); }
     | ENTERO                                { $$ = instruccionesAPI.nuevoValor(TIPO_VALOR.ENTERO, $1); }
     | ID                                    { $$ = instruccionesAPI.nuevoValor(TIPO_VALOR.IDENTIFICADOR, $1); }
-    | CADENA                                { $$ = instruccionesAPI.nuevoValor(TIPO_VALOR.CADENA, $1); }
-    | CARACTER                              { $$ = instruccionesAPI.nuevoValor(TIPO_VALOR.CARACTER, $1); }
+    | CADENA                                { $$ = instruccionesAPI.nuevoValor(TIPO_VALOR.CADENA, "\"" + $1 + "\""); }
+    | CARACTER                              { $$ = instruccionesAPI.nuevoValor(TIPO_VALOR.CARACTER, "'" + $1 + "'"); }
     | true                                  { $$ = instruccionesAPI.nuevoValor(TIPO_VALOR.TRUE, $1); }
     | false                                 { $$ = instruccionesAPI.nuevoValor(TIPO_VALOR.FALSE, $1); }    
 ;

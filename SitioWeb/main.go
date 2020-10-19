@@ -12,8 +12,8 @@ import (
 	"os"
 )
 
-type curso struct {
-	Nombre string
+type ast struct {
+	contenido string
 }
 
 func getServiceJs(w http.ResponseWriter, r *http.Request) {
@@ -33,7 +33,7 @@ func getServiceJs(w http.ResponseWriter, r *http.Request) {
 
 	log.Printf(string(bodyBytes))
 
-	var c curso
+	var c ast
 	_ = json.Unmarshal(bodyBytes, &c)
 
 	t := template.Must(template.ParseFiles("index.html"))
@@ -60,6 +60,17 @@ func postServiceJs(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(err)
 	}
 	log.Println(string(body))
+
+	t := template.Must(template.ParseFiles("index.html"))
+	t.Execute(w, "")
+}
+
+func postTraducorJs(w http.ResponseWriter, r *http.Request) {
+
+	//copy the relevant headers. If you want to preserve the downloaded file name, extract it with go's url parser.
+	w.Header().Set("Content-Disposition", "attachment; filename= Traduccion.js")
+	w.Header().Set("Content-Type", r.Header.Get("Content-Type"))
+	w.Header().Set("Content-Length", r.Header.Get("Content-Length"))
 
 	t := template.Must(template.ParseFiles("index.html"))
 	t.Execute(w, "")
@@ -97,6 +108,7 @@ func main() {
 	http.HandleFunc("/node", getServiceJs)
 	http.HandleFunc("/analizar", postServiceJs)
 	http.HandleFunc("/upload", uploader)
+	http.HandleFunc("/downloadJS", postTraducorJs)
 	log.Println("Running")
 	http.ListenAndServe(":8080", nil)
 	fmt.Println("Escuchando")

@@ -12,27 +12,27 @@ const TIPO_VALOR = {
 
 // Constantes para los tipos de 'operaciones' que soporta nuestra gramática.
 const TIPO_OPERACION = {
-	SUMA:           'OP_SUMA',
-	RESTA:          'OP_RESTA',
-	MULTIPLICACION: 'OP_MULTIPLICACION',
-    DIVISION:       'OP_DIVISION',
-    XOR:            'OP_XOR',         
+	SUMA:           '+',
+	RESTA:          '-',
+	MULTIPLICACION: '*',
+    DIVISION:       '/',
+    XOR:            '^',         
     
-    NEGATIVO:       'OP_NEGATIVO',
+    NEGATIVO:       '-',
     
-	MAYOR_QUE:      'OP_MAYOR_QUE',
-    MENOR_QUE:      'OP_MENOR_QUE',
-    IGUAL:          'OP_IGUAL_IGUAL',
-    MAYOR_IGUAL:    'OP_MAYOR_IGUAL',
-    MENOR_IGUAL:    'OP_MENOR_IGUAL',
-    NO_IGUAL :      'OP_NO_IGUAL',
+	MAYOR_QUE:      '>',
+    MENOR_QUE:      '<',
+    IGUAL:          '==',
+    MAYOR_IGUAL:    '>=',
+    MENOR_IGUAL:    '<=',
+    NO_IGUAL :      '!=',
 
-    AND :           'OP_AND',
-    OR :            'OP_OR',
-    NOT :           'OP_NOT',
+    AND :           '&&',
+    OR :            '||',
+    NOT :           '!',
 
-    INCREMENTACION: 'OP_INCRE',
-    DISMINUCION:    'OP_DISMI',     
+    INCREMENTACION: '++',
+    DISMINUCION:    '--',     
 
 }
 
@@ -121,6 +121,7 @@ const instruccionesAPI = {
      * @param {*} _ID
      * @param {*} _LL_ABRE
      * @param {*} _AyM
+     * @param {*} estado
      * @param {*} _LL_CIERRA
      */
 
@@ -132,6 +133,7 @@ const instruccionesAPI = {
             _ID : _ID,
             _LL_ABRE : _LL_ABRE,
             _AyM : _AyM,
+            estado: 'lleno',
             _LL_CIERRA : _LL_CIERRA
 		}
     },
@@ -141,6 +143,7 @@ const instruccionesAPI = {
      * @param {*} _public
      * @param {*} _clase
      * @param {*} _ID
+     * @param {*} estado
      * @param {*} _LL_ABRE
      * @param {*} _LL_CIERRA
      */
@@ -150,6 +153,7 @@ const instruccionesAPI = {
             _public: _public,
             _clase: _clase,
             _ID : _ID,
+            estado: 'vacio',
             _LL_ABRE : _LL_ABRE,
             _LL_CIERRA : _LL_CIERRA
 		}
@@ -208,6 +212,7 @@ const instruccionesAPI = {
      * @param {*} _LL_ABRE
      * @param {*} _Sentencias
      * @param {*} _LL_CIERRA
+     * @param {*} estado
      */
     nuevoMI_P: function(_public, _S4, _ID, _P_ABRE, _Parametros, _P_CIERRA, _LL_ABRE, _Sentencias, _LL_CIERRA){
         return{
@@ -220,7 +225,8 @@ const instruccionesAPI = {
             _P_CIERRA: _P_CIERRA,
             _LL_ABRE: _LL_ABRE,
             _Sentencias: _Sentencias,
-            _LL_CIERRA: _LL_CIERRA
+            _LL_CIERRA: _LL_CIERRA,
+            estado: 'lleno'
         }
     },
 
@@ -234,6 +240,7 @@ const instruccionesAPI = {
      * @param {*} _LL_ABRE
      * @param {*} _Sentencias
      * @param {*} _LL_CIERRA
+     * @param {*} estado
      */
     nuevoMI_SP: function(_public, _S4, _ID, _P_ABRE, _P_CIERRA, _LL_ABRE, _Sentencias, _LL_CIERRA){
         return{
@@ -245,7 +252,8 @@ const instruccionesAPI = {
             _P_CIERRA: _P_CIERRA,
             _LL_ABRE: _LL_ABRE,
             _Sentencias: _Sentencias,
-            _LL_CIERRA: _LL_CIERRA
+            _LL_CIERRA: _LL_CIERRA,
+            estado: 'lleno'
         }
     },
     /**
@@ -258,6 +266,7 @@ const instruccionesAPI = {
      * @param {*} _P_CIERRA
      * @param {*} _LL_ABRE
      * @param {*} _LL_CIERRA
+     * @param {*} estado
      */
     nuevoMI_S: function(_public, _S4, _ID, _P_ABRE, _Parametros, _P_CIERRA, _LL_ABRE, _LL_CIERRA){
         return{
@@ -269,7 +278,8 @@ const instruccionesAPI = {
             _Parametros: _Parametros,
             _P_CIERRA: _P_CIERRA,
             _LL_ABRE: _LL_ABRE,
-            _LL_CIERRA : _LL_CIERRA
+            _LL_CIERRA : _LL_CIERRA,
+            estado: 'vacio'
         }
     },
     /**
@@ -281,6 +291,7 @@ const instruccionesAPI = {
      * @param {*} _P_CIERRA
      * @param {*} _LL_ABRE
      * @param {*} _LL_CIERRA
+     * @param {*} estado
      */
     nuevoMI_S_P: function(_public, _S4, _ID, _P_ABRE, _P_CIERRA, _LL_ABRE, _LL_CIERRA){
         return{
@@ -291,7 +302,8 @@ const instruccionesAPI = {
             _P_ABRE: _P_ABRE,
             _P_CIERRA: _P_CIERRA,
             _LL_ABRE: _LL_ABRE,
-            _LL_CIERRA : _LL_CIERRA
+            _LL_CIERRA : _LL_CIERRA,
+            estado: 'vacio'
         }
     },
     /**
@@ -419,21 +431,21 @@ const instruccionesAPI = {
     },
     /**
 	 * Creo un objeto para Parametros para expresion
-	 * @param {*} expresion 
+	 * @param {*} _ID 
 	 */
-	nuevoPA_E: function(expresion) {
+	nuevoPA_E: function(_ID) {
 		return {
-			expresion : expresion
+			_ID : _ID
 		}
     },
     /**
 	 * Creo un objeto para Parametros para expresion con coma
-	 * @param {*} expresion 
+	 * @param {*} _ID 
      * @param {*} _Coma
 	 */
-	nuevoPA_E_C: function(expresion, _Coma) {
+	nuevoPA_E_C: function(_ID, _Coma) {
 		return {
-            expresion : expresion,
+            _ID : _ID,
             _Coma: _Coma
 		}
     },

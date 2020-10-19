@@ -1,40 +1,37 @@
 public class javadsd { 
-    int x = 0;
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        String RJ1 = "vector", RJ2; 
-    }
-    public boolean validarNumero(String validarNum) {
-        int num = 0;
-        String asd = "fs";
+    int as;
+    public void sas(int x, String y){
         while(continuar){
-            System.out.println("");
+            for (int i = 5*5; i < 15; i++) {
+                break;
+            }
+            boolean sd = true, gd;
+            hola = aas();
+            String rwe = "das" + asd;
+            return 10*5;
             
         }
-        if (num != 0){
-            char j = 's';
-        }else if (h < 5){
-            sas(0.1,1);
-        }else if (cs){
-            System.out.print(i + "," + "\t");
+        do {
+            System.out.println("         MENU       ");
+            System.out.println("1. lista de pokemones");
+            System.out.println("2. Editar Pokemones");
+            System.out.println("3. EMPEZAR BATALLA");
+            System.out.println("4. Registro de las partidas");
+            System.out.println("5. Lista de pokemones mas utilizados");
+        } while (yustring <= 7);
+
+        if(hh == 'i')
+        {
+            return 'i';
+        }else if(hh == 'k'){
+            return 'k';
+        }else if(as){
+            double mira = 0.1;
         }
-        else{
-            char h;
-        }
-        for (int i = 0; i < 15; i++) {
-            System.out.print(i + "," + "\t");
-            continue; 
-        }
-        num = 5 + 0;
-         
-    }
-    public void sas(double y, double z){
 
     }
-}
-public interface sa { 
-    public void modo(int ssa, String sfsdf);
-    public void mosfdo();
+    public void nio(){
+        sas(1,2);
+        fs = daniel;
+    }
 }

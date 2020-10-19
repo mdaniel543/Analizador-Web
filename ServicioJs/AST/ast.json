@@ -22,7 +22,7 @@
                 "tipo": "10",
                 "valor": "VAL_DECIMAL"
               },
-              "tipo": "OP_SUMA"
+              "tipo": "+"
             }
           }
         ],
@@ -41,6 +41,18 @@
         "_args": "args",
         "_P_CIERRA": ")",
         "_LL_ABRE": "{",
+        "_Sentencias": [
+          {
+            "tipoIns": "INSTR_DECLA",
+            "_Type": "int",
+            "_LD": [
+              {
+                "_ID": "l"
+              }
+            ],
+            "_PyC": ";"
+          }
+        ],
         "_LL_CIERRA": "}"
       },
       {
@@ -52,7 +64,10 @@
         "_Parametros": [
           {
             "_Type": "String",
-            "_ID": "validarNum"
+            "_ID": {
+              "tipo": "validarNum",
+              "valor": "VAL_IDENTIFICADOR"
+            }
           }
         ],
         "_P_CIERRA": ")",
@@ -86,7 +101,7 @@
                 "tipo": "0",
                 "valor": "VAL_DECIMAL"
               },
-              "tipo": "OP_IGUAL_IGUAL"
+              "tipo": "=="
             },
             "_P_CIERRA": ")",
             "_LL_ABRE": "{",
@@ -116,7 +131,7 @@
                     "_print": "println",
                     "_P_ABRE": "(",
                     "_expresion": {
-                      "tipo": "* Favor Intentelo de nuevo: ",
+                      "tipo": "\"* Favor Intentelo de nuevo: \"",
                       "valor": "VAL_CADENA"
                     },
                     "_P_CIERRA": ")",
@@ -137,7 +152,8 @@
             ]
           }
         ],
-        "_LL_CIERRA": "}"
+        "_LL_CIERRA": "}",
+        "estado": "lleno"
       },
       {
         "tipoIns": "INSTR_IMETODO",
@@ -182,7 +198,7 @@
             "_print": "println",
             "_P_ABRE": "(",
             "_expresion": {
-              "tipo": "BIENVENIDO AL JUEGO DE",
+              "tipo": "\"BIENVENIDO AL JUEGO DE\"",
               "valor": "VAL_CADENA"
             },
             "_P_CIERRA": ")",
@@ -202,7 +218,7 @@
                 "_print": "println",
                 "_P_ABRE": "(",
                 "_expresion": {
-                  "tipo": "         MENU       ",
+                  "tipo": "\"         MENU       \"",
                   "valor": "VAL_CADENA"
                 },
                 "_P_CIERRA": ")",
@@ -217,7 +233,7 @@
                 "_print": "println",
                 "_P_ABRE": "(",
                 "_expresion": {
-                  "tipo": "1. lista de pokemones",
+                  "tipo": "\"1. lista de pokemones\"",
                   "valor": "VAL_CADENA"
                 },
                 "_P_CIERRA": ")",
@@ -232,7 +248,7 @@
                 "_print": "println",
                 "_P_ABRE": "(",
                 "_expresion": {
-                  "tipo": "2. Editar Pokemones",
+                  "tipo": "\"2. Editar Pokemones\"",
                   "valor": "VAL_CADENA"
                 },
                 "_P_CIERRA": ")",
@@ -247,7 +263,7 @@
                 "_print": "println",
                 "_P_ABRE": "(",
                 "_expresion": {
-                  "tipo": "3. EMPEZAR BATALLA",
+                  "tipo": "\"3. EMPEZAR BATALLA\"",
                   "valor": "VAL_CADENA"
                 },
                 "_P_CIERRA": ")",
@@ -262,7 +278,7 @@
                 "_print": "println",
                 "_P_ABRE": "(",
                 "_expresion": {
-                  "tipo": "4. Registro de las partidas",
+                  "tipo": "\"4. Registro de las partidas\"",
                   "valor": "VAL_CADENA"
                 },
                 "_P_CIERRA": ")",
@@ -277,7 +293,7 @@
                 "_print": "println",
                 "_P_ABRE": "(",
                 "_expresion": {
-                  "tipo": "5. Lista de pokemones mas utilizados",
+                  "tipo": "\"5. Lista de pokemones mas utilizados\"",
                   "valor": "VAL_CADENA"
                 },
                 "_P_CIERRA": ")",
@@ -301,13 +317,14 @@
                 "tipo": "7",
                 "valor": "VAL_DECIMAL"
               },
-              "tipo": "OP_MENOR_IGUAL"
+              "tipo": "<="
             },
             "_P_CIERRA": ")",
             "_PyC": ";"
           }
         ],
-        "_LL_CIERRA": "}"
+        "_LL_CIERRA": "}",
+        "estado": "lleno"
       },
       {
         "tipoIns": "INSTR_DECLA",
@@ -386,7 +403,7 @@
                 "tipo": "primero",
                 "valor": "VAL_IDENTIFICADOR"
               },
-              "tipo": "OP_MENOR_QUE"
+              "tipo": "<"
             },
             "_PyC2": ";",
             "_expresion2": {
@@ -394,7 +411,7 @@
                 "tipo": "i",
                 "valor": "VAL_IDENTIFICADOR"
               },
-              "tipo": "OP_INCRE"
+              "tipo": "++"
             },
             "_P_CIERRA": ")",
             "_LL_ABRE": "{",
@@ -427,7 +444,7 @@
                     "tipo": "ultimo",
                     "valor": "VAL_IDENTIFICADOR"
                   },
-                  "tipo": "OP_MENOR_QUE"
+                  "tipo": "<"
                 },
                 "_PyC2": ";",
                 "_expresion2": {
@@ -435,7 +452,7 @@
                     "tipo": "j",
                     "valor": "VAL_IDENTIFICADOR"
                   },
-                  "tipo": "OP_INCRE"
+                  "tipo": "++"
                 },
                 "_P_CIERRA": ")",
                 "_LL_ABRE": "{",
@@ -466,7 +483,7 @@
             "_print": "println",
             "_P_ABRE": "(",
             "_expresion": {
-              "tipo": "PARA QUE ESCOJER TUS POKEMONES, EMPIEZA BATALLA",
+              "tipo": "\"PARA QUE ESCOJER TUS POKEMONES, EMPIEZA BATALLA\"",
               "valor": "VAL_CADENA"
             },
             "_P_CIERRA": ")",
@@ -481,14 +498,15 @@
             "_print": "println",
             "_P_ABRE": "(",
             "_expresion": {
-              "tipo": "",
+              "tipo": "\"\"",
               "valor": "VAL_CADENA"
             },
             "_P_CIERRA": ")",
             "_PyC": ";"
           }
         ],
-        "_LL_CIERRA": "}"
+        "_LL_CIERRA": "}",
+        "estado": "lleno"
       },
       {
         "tipoIns": "INSTR_IMETODO",
@@ -507,7 +525,7 @@
                 "_ID": "RJ1",
                 "_Igual": "=",
                 "_expresion": {
-                  "tipo": "vector",
+                  "tipo": "\"vector\"",
                   "valor": "VAL_CADENA"
                 },
                 "_Coma": ","
@@ -548,12 +566,19 @@
                   "valor": "VAL_DECIMAL"
                 },
                 "operandoDer": {
-                  "tipo": "2",
-                  "valor": "VAL_DECIMAL"
+                  "operandoIzq": {
+                    "tipo": "2",
+                    "valor": "VAL_DECIMAL"
+                  },
+                  "operandoDer": {
+                    "tipo": "3",
+                    "valor": "VAL_DECIMAL"
+                  },
+                  "tipo": "*"
                 },
-                "tipo": "OP_SUMA"
+                "tipo": "+"
               },
-              "tipo": "OP_MENOR_QUE"
+              "tipo": "<"
             },
             "_PyC2": ";",
             "_expresion2": {
@@ -561,7 +586,7 @@
                 "tipo": "i",
                 "valor": "VAL_IDENTIFICADOR"
               },
-              "tipo": "OP_INCRE"
+              "tipo": "++"
             },
             "_P_CIERRA": ")",
             "_LL_ABRE": "{",
@@ -594,7 +619,7 @@
                     "tipo": "34",
                     "valor": "VAL_DECIMAL"
                   },
-                  "tipo": "OP_MENOR_QUE"
+                  "tipo": "<"
                 },
                 "_PyC2": ";",
                 "_expresion2": {
@@ -602,7 +627,7 @@
                     "tipo": "j",
                     "valor": "VAL_IDENTIFICADOR"
                   },
-                  "tipo": "OP_INCRE"
+                  "tipo": "++"
                 },
                 "_P_CIERRA": ")",
                 "_LL_ABRE": "{",
@@ -623,10 +648,10 @@
                                     "valor": "VAL_IDENTIFICADOR"
                                   },
                                   "operandoDer": {
-                                    "tipo": "matriz",
+                                    "tipo": "\"matriz\"",
                                     "valor": "VAL_CADENA"
                                   },
-                                  "tipo": "OP_NO_IGUAL"
+                                  "tipo": "!="
                                 },
                                 "operandoDer": {
                                   "operandoIzq": {
@@ -637,9 +662,9 @@
                                     "tipo": "11",
                                     "valor": "VAL_DECIMAL"
                                   },
-                                  "tipo": "OP_NO_IGUAL"
+                                  "tipo": "!="
                                 },
-                                "tipo": "OP_AND"
+                                "tipo": "&&"
                               },
                               "operandoDer": {
                                 "operandoIzq": {
@@ -650,9 +675,9 @@
                                   "tipo": "12",
                                   "valor": "VAL_DECIMAL"
                                 },
-                                "tipo": "OP_NO_IGUAL"
+                                "tipo": "!="
                               },
-                              "tipo": "OP_AND"
+                              "tipo": "&&"
                             },
                             "operandoDer": {
                               "operandoIzq": {
@@ -663,9 +688,9 @@
                                 "tipo": "15",
                                 "valor": "VAL_DECIMAL"
                               },
-                              "tipo": "OP_NO_IGUAL"
+                              "tipo": "!="
                             },
-                            "tipo": "OP_AND"
+                            "tipo": "&&"
                           },
                           "operandoDer": {
                             "operandoIzq": {
@@ -676,9 +701,9 @@
                               "tipo": "16",
                               "valor": "VAL_DECIMAL"
                             },
-                            "tipo": "OP_NO_IGUAL"
+                            "tipo": "!="
                           },
-                          "tipo": "OP_AND"
+                          "tipo": "&&"
                         },
                         "operandoDer": {
                           "operandoIzq": {
@@ -689,9 +714,9 @@
                             "tipo": "17",
                             "valor": "VAL_DECIMAL"
                           },
-                          "tipo": "OP_NO_IGUAL"
+                          "tipo": "!="
                         },
-                        "tipo": "OP_AND"
+                        "tipo": "&&"
                       },
                       "operandoDer": {
                         "operandoIzq": {
@@ -702,9 +727,9 @@
                           "tipo": "18",
                           "valor": "VAL_DECIMAL"
                         },
-                        "tipo": "OP_NO_IGUAL"
+                        "tipo": "!="
                       },
-                      "tipo": "OP_AND"
+                      "tipo": "&&"
                     },
                     "_P_CIERRA": ")",
                     "_LL_ABRE": "{",
@@ -723,10 +748,10 @@
                             "valor": "VAL_IDENTIFICADOR"
                           },
                           "operandoDer": {
-                            "tipo": "\\t",
+                            "tipo": "\"\\t\"",
                             "valor": "VAL_CADENA"
                           },
-                          "tipo": "OP_SUMA"
+                          "tipo": "+"
                         },
                         "_P_CIERRA": ")",
                         "_PyC": ";"
@@ -746,7 +771,7 @@
                 "_print": "println",
                 "_P_ABRE": "(",
                 "_expresion": {
-                  "tipo": "",
+                  "tipo": "\"\"",
                   "valor": "VAL_CADENA"
                 },
                 "_P_CIERRA": ")",
@@ -764,14 +789,15 @@
             "_print": "println",
             "_P_ABRE": "(",
             "_expresion": {
-              "tipo": "",
+              "tipo": "\"\"",
               "valor": "VAL_CADENA"
             },
             "_P_CIERRA": ")",
             "_PyC": ";"
           }
         ],
-        "_LL_CIERRA": "}"
+        "_LL_CIERRA": "}",
+        "estado": "lleno"
       },
       {
         "tipoIns": "INSTR_IMETODO",
@@ -782,12 +808,18 @@
         "_Parametros": [
           {
             "_Type": "String",
-            "_ID": "h",
+            "_ID": {
+              "tipo": "h",
+              "valor": "VAL_IDENTIFICADOR"
+            },
             "_Coma": ","
           },
           {
             "_Type": "int",
-            "_ID": "ho"
+            "_ID": {
+              "tipo": "ho",
+              "valor": "VAL_IDENTIFICADOR"
+            }
           }
         ],
         "_P_CIERRA": ")",
@@ -847,7 +879,7 @@
                     "tipo": "15",
                     "valor": "VAL_DECIMAL"
                   },
-                  "tipo": "OP_MENOR_QUE"
+                  "tipo": "<"
                 },
                 "_PyC2": ";",
                 "_expresion2": {
@@ -855,7 +887,7 @@
                     "tipo": "i",
                     "valor": "VAL_IDENTIFICADOR"
                   },
-                  "tipo": "OP_INCRE"
+                  "tipo": "++"
                 },
                 "_P_CIERRA": ")",
                 "_LL_ABRE": "{",
@@ -875,16 +907,16 @@
                           "valor": "VAL_IDENTIFICADOR"
                         },
                         "operandoDer": {
-                          "tipo": ",",
+                          "tipo": "\",\"",
                           "valor": "VAL_CADENA"
                         },
-                        "tipo": "OP_SUMA"
+                        "tipo": "+"
                       },
                       "operandoDer": {
-                        "tipo": "\\t",
+                        "tipo": "\"\\t\"",
                         "valor": "VAL_CADENA"
                       },
-                      "tipo": "OP_SUMA"
+                      "tipo": "+"
                     },
                     "_P_CIERRA": ")",
                     "_PyC": ";"
@@ -911,7 +943,8 @@
             "_LL_CIERRA": "}"
           }
         ],
-        "_LL_CIERRA": "}"
+        "_LL_CIERRA": "}",
+        "estado": "lleno"
       },
       {
         "tipoIns": "INSTR_IMETODO",
@@ -922,7 +955,10 @@
         "_Parametros": [
           {
             "_Type": "boolean",
-            "_ID": "a"
+            "_ID": {
+              "tipo": "a",
+              "valor": "VAL_IDENTIFICADOR"
+            }
           }
         ],
         "_P_CIERRA": ")",
@@ -936,7 +972,7 @@
                 "_ID": "hh",
                 "_Igual": "=",
                 "_expresion": {
-                  "tipo": "j",
+                  "tipo": "'j'",
                   "valor": "VAL_CARACTER"
                 }
               }
@@ -949,14 +985,49 @@
             "_P_ABRE": "(",
             "_expresion": {
               "operandoIzq": {
-                "tipo": "hh",
-                "valor": "VAL_IDENTIFICADOR"
+                "operandoIzq": {
+                  "operandoIzq": {
+                    "operandoIzq": {
+                      "operandoIzq": {
+                        "operandoIzq": {
+                          "tipo": "hh",
+                          "valor": "VAL_IDENTIFICADOR"
+                        },
+                        "operandoDer": {
+                          "tipo": "10",
+                          "valor": "VAL_DECIMAL"
+                        },
+                        "tipo": "*"
+                      },
+                      "operandoDer": {
+                        "tipo": "8",
+                        "valor": "VAL_DECIMAL"
+                      },
+                      "tipo": "+"
+                    },
+                    "operandoDer": {
+                      "tipo": "11",
+                      "valor": "VAL_DECIMAL"
+                    },
+                    "tipo": "+"
+                  },
+                  "operandoDer": {
+                    "tipo": "4",
+                    "valor": "VAL_DECIMAL"
+                  },
+                  "tipo": "+"
+                },
+                "operandoDer": {
+                  "tipo": "6",
+                  "valor": "VAL_DECIMAL"
+                },
+                "tipo": "-"
               },
               "operandoDer": {
-                "tipo": "i",
-                "valor": "VAL_CARACTER"
+                "tipo": "8",
+                "valor": "VAL_DECIMAL"
               },
-              "tipo": "OP_IGUAL_IGUAL"
+              "tipo": "-"
             },
             "_P_CIERRA": ")",
             "_LL_ABRE": "{",
@@ -965,7 +1036,7 @@
                 "tipoIns": "INSTR_RETURN",
                 "_return": "return",
                 "_expresion": {
-                  "tipo": "i",
+                  "tipo": "'i'",
                   "valor": "VAL_CARACTER"
                 },
                 "_PyC": ";"
@@ -983,10 +1054,17 @@
                     "valor": "VAL_IDENTIFICADOR"
                   },
                   "operandoDer": {
-                    "tipo": "k",
-                    "valor": "VAL_CARACTER"
+                    "operandoIzq": {
+                      "tipo": "10",
+                      "valor": "VAL_DECIMAL"
+                    },
+                    "operandoDer": {
+                      "tipo": "5",
+                      "valor": "VAL_DECIMAL"
+                    },
+                    "tipo": "+"
                   },
-                  "tipo": "OP_IGUAL_IGUAL"
+                  "tipo": "=="
                 },
                 "_P_CIERRA": ")",
                 "_LL_ABRE": "{",
@@ -995,7 +1073,7 @@
                     "tipoIns": "INSTR_RETURN",
                     "_return": "return",
                     "_expresion": {
-                      "tipo": "k",
+                      "tipo": "'k'",
                       "valor": "VAL_CARACTER"
                     },
                     "_PyC": ";"
@@ -1037,9 +1115,11 @@
             "_PyC": ";"
           }
         ],
-        "_LL_CIERRA": "}"
+        "_LL_CIERRA": "}",
+        "estado": "lleno"
       }
     ],
+    "estado": "lleno",
     "_LL_CIERRA": "}"
   }
 ]

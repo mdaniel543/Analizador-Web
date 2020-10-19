@@ -51,7 +51,7 @@ public class JavaApplication1 {
     public void registro() {
         String RJ1 = "vector", RJ2; 
         // imprimo la matriz del registro eseptuando posiciones que no me sirven 
-        for (int i = 0; i < 15 + 2; i++) {
+        for (int i = 0; i < 15 + 2*3; i++) {
             for (int j = 0; j < 34; j++) {
                 if(RJ1 != "matriz" && j != 11 && j != 12 && j != 15 && j != 16 && j != 17 && j != 18) {
                     System.out.print(RJ1 + "\t");
@@ -73,10 +73,10 @@ public class JavaApplication1 {
     }
     public char el(boolean a){
         char hh = 'j';
-        if(hh == 'i')
+        if(hh*10+8+11+4-6-8)
         {
             return 'i';
-        }else if(hh == 'k'){
+        }else if(hh == 10+5){
             return 'k';
         }else{
             double mira = 0.1;
