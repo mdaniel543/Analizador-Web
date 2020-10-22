@@ -90,7 +90,7 @@
 
 <<EOF>>				return 'EOF';
 
-.					{ console.error('Este es un error léxico: ' + yytext + ', en la linea: ' + yylloc.first_line + ', en la columna: ' + yylloc.first_column); }
+.					{ console.error('Este es un error léxico: ' + yytext + ', en la linea: ' + yylloc.first_line + ', en la columna: ' + yylloc.first_column); return 'exico'; }
 
 /lex
 
@@ -121,8 +121,9 @@ INI
     | PR_public PR_interface ID LL_ABRE LL_CIERRA           { $$ = instruccionesAPI.nuevoInterV($1, $2, $3, $4, $5); }    
     | PR_public PR_class ID LL_ABRE LC LL_CIERRA            { $$ = instruccionesAPI.nuevoClase($1, $2, $3, $4, $5, $6); }
     | PR_public PR_interface ID LL_ABRE LI LL_CIERRA        { $$ = instruccionesAPI.nuevoInter($1, $2, $3, $4, $5, $6); }
+    | exico {$$ = instruccionesAPI.nuevoERROR('Lexico', this._$.first_line, this._$.first_column, yytext);}
     | error  { console.error('Este es un error sintactico: ' + yytext + ', en la linea: ' + this._$.first_line + ', en la columna: ' + this._$.first_column);
-    $$ = 'Este es un error sintactico: ' + yytext + ', en la linea: ' + this._$.first_line + ', en la columna: ' + this._$.first_column;
+    $$ = instruccionesAPI.nuevoERROR('Sintactico', this._$.first_line, this._$.first_column, yytext);
     }    
 ;
 LC
@@ -133,6 +134,10 @@ LC
 C   : MI    {$$ = $1}
     | DEC   {$$ = $1}
     | ASIG  {$$ = $1}
+    | exico {$$ = instruccionesAPI.nuevoERROR('Lexico', this._$.first_line, this._$.first_column, yytext);}
+    | error  { console.error('Este es un error sintactico: ' + yytext + ', en la linea: ' + this._$.first_line + ', en la columna: ' + this._$.first_column);
+    $$ = instruccionesAPI.nuevoERROR('Sintactico', this._$.first_line, this._$.first_column, yytext);
+    }  
 ;
 LI
     : LI I  { $1.push($2); $$ = $1; }
@@ -141,6 +146,10 @@ LI
 I
     : PR_public TP ID P_ABRE P_CIERRA PyC       { $$ = instruccionesAPI.nuevoMD_SP($1, $2, $3, $4, $5, $6);}
     | PR_public TP ID P_ABRE LP P_CIERRA PyC    { $$ = instruccionesAPI.nuevoMD_P($1, $2, $3, $4, $5, $6, $7);}
+    | exico {$$ = instruccionesAPI.nuevoERROR('Lexico', this._$.first_line, this._$.first_column, yytext);}
+    | error  { console.error('Este es un error sintactico: ' + yytext + ', en la linea: ' + this._$.first_line + ', en la columna: ' + this._$.first_column);
+    $$ = instruccionesAPI.nuevoERROR('Sintactico', this._$.first_line, this._$.first_column, yytext);
+    }  
 ;
 TP 
     : TIPO      {$$ = $1}
@@ -155,7 +164,6 @@ MI
     | PR_public TP ID P_ABRE LP P_CIERRA PyC                                                                        { $$ = instruccionesAPI.nuevoMD_P($1, $2, $3, $4, $5, $6, $7);}
     | PR_public PR_static PR_void PR_main P_ABRE PR_String C_ABRE C_CIERRA PR_args P_CIERRA LL_ABRE LL_CIERRA       { $$ = instruccionesAPI.nuevoMAIN_S($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12); }
     | PR_public PR_static PR_void PR_main P_ABRE PR_String C_ABRE C_CIERRA PR_args P_CIERRA LL_ABRE LINS LL_CIERRA  { $$ = instruccionesAPI.nuevoMAIN($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12, $13); }
-
 ;
 LP
     : LP P { $1.push($2); $$ = $1; }
@@ -166,6 +174,7 @@ P
     | EXP Coma { $$ = instruccionesAPI.nuevoPA_E_C($1,$2);}
     | TIPO EXP { $$ = instruccionesAPI.nuevoPA($1,$2);}
     | TIPO EXP Coma { $$ = instruccionesAPI.nuevoPA_C($1,$2,$3);}
+    | exico {$$ = instruccionesAPI.nuevoERROR('Lexico', this._$.first_line, this._$.first_column, yytext);}
 ;
 DEC
     : TIPO LDEC PyC { $$ = instruccionesAPI.nuevoDEC($1, $2, $3);}
@@ -183,6 +192,7 @@ D
     | ID Igual ID P_ABRE LP P_CIERRA { $$ = instruccionesAPI.nuevoD_LL($1,$2,$3,$4,$5,$6); }
     | ID Igual ID P_ABRE P_CIERRA Coma { $$ = instruccionesAPI.nuevoD_LL_P_C($1,$2,$3,$4,$5,$6); }
     | ID Igual ID P_ABRE LP P_CIERRA Coma { $$ = instruccionesAPI.nuevoD_LL_C($1,$2,$3,$4,$5,$6,$7); }
+    | exico {$$ = instruccionesAPI.nuevoERROR('Lexico', this._$.first_line, this._$.first_column, yytext);}
 ;
 ASIG
     : ID Igual EXP PyC { $$ = instruccionesAPI.nuevoA($1,$2,$3,$4);}
@@ -208,8 +218,9 @@ INS
     | PR_continue PyC { $$ = instruccionesAPI.nuevoContinue($1, $2); }
     | PR_return EXP PyC { $$ = instruccionesAPI.nuevoreturn_e($1, $2, $3); }
     | PR_return PyC { $$ = instruccionesAPI.nuevoreturn($1, $2, $3);}
+    | exico {$$ = instruccionesAPI.nuevoERROR('Lexico', this._$.first_line, this._$.first_column, yytext);}
     | error  { console.error('Este es un error sintactico: ' + yytext + ', en la linea: ' + this._$.first_line + ', en la columna: ' + this._$.first_column);
-    $$ = 'Este es un error sintactico: ' + yytext + ', en la linea: ' + this._$.first_line + ', en la columna: ' + this._$.first_column;
+    $$ = instruccionesAPI.nuevoERROR('Sintactico', this._$.first_line, this._$.first_column, yytext);
     }    
 ;
 FOR 
@@ -239,6 +250,9 @@ EIE
     | PR_else LL_ABRE LINS LL_CIERRA { $$ = instruccionesAPI.nuevoe($1,$2,$3,$4);}
     | PR_else PR_if P_ABRE EXP P_CIERRA LL_ABRE LINS LL_CIERRA { $$ = instruccionesAPI.nuevoe_if($1,$2,$3,$4,$5,$6,$7,$8);}
     | PR_else PR_if P_ABRE EXP P_CIERRA LL_ABRE LL_CIERRA { $$ = instruccionesAPI.nuevoe_ifV($1,$2,$3,$4,$5,$6,$7);}
+    | error  { console.error('Este es un error sintactico: ' + yytext + ', en la linea: ' + this._$.first_line + ', en la columna: ' + this._$.first_column);
+    $$ = instruccionesAPI.nuevoERROR('Sintactico', this._$.first_line, this._$.first_column, yytext);
+    }  
 ;
 LLM 
     : ID P_ABRE P_CIERRA PyC { $$ = instruccionesAPI.nuevoLLAMA_M_V($1,$2,$3,$4); } 
@@ -283,5 +297,6 @@ EXP
     | CADENA                                { $$ = instruccionesAPI.nuevoValor(TIPO_VALOR.CADENA, "\"" + $1 + "\""); }
     | CARACTER                              { $$ = instruccionesAPI.nuevoValor(TIPO_VALOR.CARACTER, "'" + $1 + "'"); }
     | true                                  { $$ = instruccionesAPI.nuevoValor(TIPO_VALOR.TRUE, $1); }
-    | false                                 { $$ = instruccionesAPI.nuevoValor(TIPO_VALOR.FALSE, $1); }    
+    | false                                 { $$ = instruccionesAPI.nuevoValor(TIPO_VALOR.FALSE, $1); }
+    | exico                                 { $$ = instruccionesAPI.nuevoERROR('Lexico', this._$.first_line, this._$.first_column, yytext);}
 ;

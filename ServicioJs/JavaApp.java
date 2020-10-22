@@ -1,8 +1,8 @@
-public class JavaApplication1 {
+public class Java {
     
-    int x = 5 + 10;
+    String int x = 5 + 10;
 
-
+    
     /**
      * @param args the command line arguments
      */
@@ -73,15 +73,21 @@ public class JavaApplication1 {
     }
     public char el(boolean a){
         char hh = 'j';
-        if(hh*10+8+11+4-6-8)
+        if(hh*10+8+11+4-6-8 == df)
         {
             return 'i';
         }else if(hh == 10+5){
             return 'k';
+        }else if(hola){
+            
         }else{
             double mira = 0.1;
         }
         return hh;
     }
+}
+
+public interface Javas{
+    public boolean sasfs(int hola);
 }
 

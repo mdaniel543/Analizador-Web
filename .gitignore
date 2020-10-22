@@ -1,3 +1,6 @@
 serviciojs/node_modules
 npm-debug.log
 serviciojs/.dockerignore
+serviciojs/analizador/r.jison
+serviciojs/analizador/r.sh
+serviciojs/analizador/r.js

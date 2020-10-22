@@ -55,6 +55,10 @@ const TIPO_INSTRUCCION = {
     RETURN:      'INSTR_RETURN',
     PRINT:       'INSTR_PRINT',
     LLAMADA_M:   'INSTR_LLA_M',
+
+    ERROR:       'ERROR',
+    TOKEN:        'TOKEN',     
+
 }
 
 
@@ -1143,6 +1147,31 @@ const instruccionesAPI = {
             tipoIns: TIPO_INSTRUCCION.RETURN,
             _return: _return,
             _PyC: _PyC
+        }
+    },
+    /**
+     * Creo un objeto para el return
+     * @param {*} tipo 
+     * @param {*} Fila
+     * @param {*} columna
+     * @param {*} des
+     */
+    nuevoERROR: function(tipo, Fila, columna, des){
+        return{
+            tipoIns: TIPO_INSTRUCCION.ERROR,
+            tipo: tipo,
+            Fila: Fila,
+            columna: columna, 
+            des: des
+        }
+    },
+    Tokens: function(tipo, Fila, columna, des){
+        return{
+            tipoIns: TIPO_INSTRUCCION.TOKEN,
+            Fila: Fila,
+            columna: columna, 
+            tipo: tipo,
+            des: des
         }
     }
 

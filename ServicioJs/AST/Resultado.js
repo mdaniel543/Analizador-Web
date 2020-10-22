@@ -1,7 +1,11 @@
-class JavaApplication1{ 
+class Java{ 
 	constructor(){ 
  	} 
 	var x = 5+10;
+	function main() { 
+		var l;
+
+} 
 	function validarNumero(validarNum) { 
 		var num = 0;
 		if (num==0) { 
@@ -29,7 +33,7 @@ class JavaApplication1{
 			break;
 
 		}
-while ( yustring<=7);
+		while ( yustring<=7);
 
 	}
 	var lis;
@@ -66,7 +70,6 @@ while ( yustring<=7);
 		}
 		console.log( ""); 
 
-		
 	}
 	function elmio(h, ho) { 
 		var continuar = true;
@@ -84,12 +87,15 @@ while ( yustring<=7);
 	}
 	function el(a) { 
 		var hh = 'j';
-		if (hh*10+8+11+4-6-8) { 
+		if (hh*10+8+11+4-6-8==df) { 
 			return 'i';
 
 		}
 		else if (hh==10+5) { 
 			return 'k';
+
+		}
+		else if (hola) { 
 
 		}
 		else { 

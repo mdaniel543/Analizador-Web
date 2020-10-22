@@ -1,5 +1,5 @@
 #!/bin/bash
-x=20
+x=5
 while [ $x -gt 0 ]
 do
 sleep 1s

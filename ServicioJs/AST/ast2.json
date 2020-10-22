@@ -1,0 +1,3404 @@
+[
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 0,
+    "columna": "RESERVADA",
+    "tipo": 1,
+    "des": "public"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 7,
+    "columna": "RESERVADA",
+    "tipo": 1,
+    "des": "class"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 13,
+    "columna": "ID",
+    "tipo": 1,
+    "des": "Java"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "Signo",
+    "tipo": 1,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 4,
+    "columna": "RESERVADA",
+    "tipo": 3,
+    "des": "int"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "ID",
+    "tipo": 3,
+    "des": "x"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 10,
+    "columna": "Signo",
+    "tipo": 3,
+    "des": "="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "NUMERO",
+    "tipo": 3,
+    "des": "5"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 14,
+    "columna": "Signo",
+    "tipo": 3,
+    "des": "+"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "NUMERO",
+    "tipo": 3,
+    "des": "10"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "Signo",
+    "tipo": 3,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 4,
+    "columna": "RESERVADA",
+    "tipo": 9,
+    "des": "public"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 11,
+    "columna": "RESERVADA",
+    "tipo": 9,
+    "des": "static"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "RESERVADA",
+    "tipo": 9,
+    "des": "void"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "RESERVADA",
+    "tipo": 9,
+    "des": "main"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 27,
+    "columna": "Signo",
+    "tipo": 9,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 28,
+    "columna": "RESERVADA",
+    "tipo": 9,
+    "des": "String"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 34,
+    "columna": "Signo",
+    "tipo": 9,
+    "des": "["
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 35,
+    "columna": "Signo",
+    "tipo": 9,
+    "des": "]"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 37,
+    "columna": "RESERVADA",
+    "tipo": 9,
+    "des": "args"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 41,
+    "columna": "Signo",
+    "tipo": 9,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 43,
+    "columna": "Signo",
+    "tipo": 9,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 10,
+    "des": "int"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "ID",
+    "tipo": 10,
+    "des": "l"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 13,
+    "columna": "Signo",
+    "tipo": 10,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 4,
+    "columna": "Signo",
+    "tipo": 11,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 4,
+    "columna": "RESERVADA",
+    "tipo": 12,
+    "des": "public"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 11,
+    "columna": "RESERVADA",
+    "tipo": 12,
+    "des": "boolean"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "ID",
+    "tipo": 12,
+    "des": "validarNumero"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 32,
+    "columna": "Signo",
+    "tipo": 12,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 33,
+    "columna": "RESERVADA",
+    "tipo": 12,
+    "des": "String"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 40,
+    "columna": "ID",
+    "tipo": 12,
+    "des": "validarNum"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 50,
+    "columna": "Signo",
+    "tipo": 12,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 52,
+    "columna": "Signo",
+    "tipo": 12,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 13,
+    "des": "int"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "ID",
+    "tipo": 13,
+    "des": "num"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "Signo",
+    "tipo": 13,
+    "des": "="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "NUMERO",
+    "tipo": 13,
+    "des": "0"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "Signo",
+    "tipo": 13,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 14,
+    "des": "if"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 11,
+    "columna": "Signo",
+    "tipo": 14,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "ID",
+    "tipo": 14,
+    "des": "num"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "Signo",
+    "tipo": 14,
+    "des": "=="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "NUMERO",
+    "tipo": 14,
+    "des": "0"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 20,
+    "columna": "Signo",
+    "tipo": 14,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 21,
+    "columna": "Signo",
+    "tipo": 14,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "RESERVADA",
+    "tipo": 15,
+    "des": "return"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "BOLEANO",
+    "tipo": 15,
+    "des": "true"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "Signo",
+    "tipo": 15,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "Signo",
+    "tipo": 16,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 9,
+    "columna": "RESERVADA",
+    "tipo": 16,
+    "des": "else"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 14,
+    "columna": "Signo",
+    "tipo": 16,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "RESERVADA",
+    "tipo": 17,
+    "des": "System"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "Signo",
+    "tipo": 17,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "RESERVADA",
+    "tipo": 17,
+    "des": "out"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "Signo",
+    "tipo": 17,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "RESERVADA",
+    "tipo": 17,
+    "des": "println"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 30,
+    "columna": "Signo",
+    "tipo": 17,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 31,
+    "columna": "CADENA",
+    "tipo": 17,
+    "des": "* Favor Intentelo de nuevo: "
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 61,
+    "columna": "Signo",
+    "tipo": 17,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 62,
+    "columna": "Signo",
+    "tipo": 17,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "RESERVADA",
+    "tipo": 18,
+    "des": "return"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "BOLEANO",
+    "tipo": 18,
+    "des": "false"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 24,
+    "columna": "Signo",
+    "tipo": 18,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "Signo",
+    "tipo": 19,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 4,
+    "columna": "Signo",
+    "tipo": 20,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 4,
+    "columna": "RESERVADA",
+    "tipo": 21,
+    "des": "public"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 11,
+    "columna": "RESERVADA",
+    "tipo": 21,
+    "des": "void"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "ID",
+    "tipo": 21,
+    "des": "Menu"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 20,
+    "columna": "Signo",
+    "tipo": 21,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 21,
+    "columna": "Signo",
+    "tipo": 21,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "Signo",
+    "tipo": 21,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 22,
+    "des": "String"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 15,
+    "columna": "ID",
+    "tipo": 22,
+    "des": "yu"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 17,
+    "columna": "Signo",
+    "tipo": 22,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 23,
+    "des": "int"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "ID",
+    "tipo": 23,
+    "des": "yustring"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 21,
+    "columna": "Signo",
+    "tipo": 23,
+    "des": "="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "NUMERO",
+    "tipo": 23,
+    "des": "0"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 24,
+    "columna": "Signo",
+    "tipo": 23,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 25,
+    "des": "System"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 14,
+    "columna": "Signo",
+    "tipo": 25,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 15,
+    "columna": "RESERVADA",
+    "tipo": 25,
+    "des": "out"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "Signo",
+    "tipo": 25,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "RESERVADA",
+    "tipo": 25,
+    "des": "println"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 26,
+    "columna": "Signo",
+    "tipo": 25,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 27,
+    "columna": "CADENA",
+    "tipo": 25,
+    "des": "BIENVENIDO AL JUEGO DE"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 51,
+    "columna": "Signo",
+    "tipo": 25,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 52,
+    "columna": "Signo",
+    "tipo": 25,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 27,
+    "des": "do"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 11,
+    "columna": "Signo",
+    "tipo": 27,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "RESERVADA",
+    "tipo": 28,
+    "des": "System"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "Signo",
+    "tipo": 28,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "RESERVADA",
+    "tipo": 28,
+    "des": "out"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "Signo",
+    "tipo": 28,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "RESERVADA",
+    "tipo": 28,
+    "des": "println"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 30,
+    "columna": "Signo",
+    "tipo": 28,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 31,
+    "columna": "CADENA",
+    "tipo": 28,
+    "des": "         MENU       "
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 53,
+    "columna": "Signo",
+    "tipo": 28,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 54,
+    "columna": "Signo",
+    "tipo": 28,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "RESERVADA",
+    "tipo": 29,
+    "des": "System"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "Signo",
+    "tipo": 29,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "RESERVADA",
+    "tipo": 29,
+    "des": "out"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "Signo",
+    "tipo": 29,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "RESERVADA",
+    "tipo": 29,
+    "des": "println"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 30,
+    "columna": "Signo",
+    "tipo": 29,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 31,
+    "columna": "CADENA",
+    "tipo": 29,
+    "des": "1. lista de pokemones"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 54,
+    "columna": "Signo",
+    "tipo": 29,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 55,
+    "columna": "Signo",
+    "tipo": 29,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "RESERVADA",
+    "tipo": 30,
+    "des": "System"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "Signo",
+    "tipo": 30,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "RESERVADA",
+    "tipo": 30,
+    "des": "out"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "Signo",
+    "tipo": 30,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "RESERVADA",
+    "tipo": 30,
+    "des": "println"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 30,
+    "columna": "Signo",
+    "tipo": 30,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 31,
+    "columna": "CADENA",
+    "tipo": 30,
+    "des": "2. Editar Pokemones"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 52,
+    "columna": "Signo",
+    "tipo": 30,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 53,
+    "columna": "Signo",
+    "tipo": 30,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "RESERVADA",
+    "tipo": 31,
+    "des": "System"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "Signo",
+    "tipo": 31,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "RESERVADA",
+    "tipo": 31,
+    "des": "out"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "Signo",
+    "tipo": 31,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "RESERVADA",
+    "tipo": 31,
+    "des": "println"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 30,
+    "columna": "Signo",
+    "tipo": 31,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 31,
+    "columna": "CADENA",
+    "tipo": 31,
+    "des": "3. EMPEZAR BATALLA"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 51,
+    "columna": "Signo",
+    "tipo": 31,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 52,
+    "columna": "Signo",
+    "tipo": 31,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "RESERVADA",
+    "tipo": 32,
+    "des": "System"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "Signo",
+    "tipo": 32,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "RESERVADA",
+    "tipo": 32,
+    "des": "out"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "Signo",
+    "tipo": 32,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "RESERVADA",
+    "tipo": 32,
+    "des": "println"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 30,
+    "columna": "Signo",
+    "tipo": 32,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 31,
+    "columna": "CADENA",
+    "tipo": 32,
+    "des": "4. Registro de las partidas"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 60,
+    "columna": "Signo",
+    "tipo": 32,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 61,
+    "columna": "Signo",
+    "tipo": 32,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "RESERVADA",
+    "tipo": 33,
+    "des": "System"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "Signo",
+    "tipo": 33,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "RESERVADA",
+    "tipo": 33,
+    "des": "out"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "Signo",
+    "tipo": 33,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "RESERVADA",
+    "tipo": 33,
+    "des": "println"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 30,
+    "columna": "Signo",
+    "tipo": 33,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 31,
+    "columna": "CADENA",
+    "tipo": 33,
+    "des": "5. Lista de pokemones mas utilizados"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 69,
+    "columna": "Signo",
+    "tipo": 33,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 70,
+    "columna": "Signo",
+    "tipo": 33,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "RESERVADA",
+    "tipo": 34,
+    "des": "break"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 17,
+    "columna": "Signo",
+    "tipo": 34,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "Signo",
+    "tipo": 35,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 10,
+    "columna": "RESERVADA",
+    "tipo": 35,
+    "des": "while"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "Signo",
+    "tipo": 35,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 17,
+    "columna": "ID",
+    "tipo": 35,
+    "des": "yustring"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 26,
+    "columna": "Signo",
+    "tipo": 35,
+    "des": "<="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 29,
+    "columna": "NUMERO",
+    "tipo": 35,
+    "des": "7"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 30,
+    "columna": "Signo",
+    "tipo": 35,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 31,
+    "columna": "Signo",
+    "tipo": 35,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 4,
+    "columna": "Signo",
+    "tipo": 36,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 4,
+    "columna": "RESERVADA",
+    "tipo": 37,
+    "des": "double"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 11,
+    "columna": "ID",
+    "tipo": 37,
+    "des": "lis"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 14,
+    "columna": "Signo",
+    "tipo": 37,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 4,
+    "columna": "RESERVADA",
+    "tipo": 38,
+    "des": "public"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 11,
+    "columna": "RESERVADA",
+    "tipo": 38,
+    "des": "void"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "ID",
+    "tipo": 38,
+    "des": "lista"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 21,
+    "columna": "Signo",
+    "tipo": 38,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "Signo",
+    "tipo": 38,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 24,
+    "columna": "Signo",
+    "tipo": 38,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 40,
+    "des": "int"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "ID",
+    "tipo": 40,
+    "des": "primero"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 20,
+    "columna": "Signo",
+    "tipo": 40,
+    "des": "="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "NUMERO",
+    "tipo": 40,
+    "des": "6"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "Signo",
+    "tipo": 40,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 41,
+    "des": "int"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "ID",
+    "tipo": 41,
+    "des": "ultimo"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "Signo",
+    "tipo": 41,
+    "des": "="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 21,
+    "columna": "NUMERO",
+    "tipo": 41,
+    "des": "13"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "Signo",
+    "tipo": 41,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 42,
+    "des": "for"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "Signo",
+    "tipo": 42,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 13,
+    "columna": "RESERVADA",
+    "tipo": 42,
+    "des": "int"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 17,
+    "columna": "ID",
+    "tipo": 42,
+    "des": "i"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "Signo",
+    "tipo": 42,
+    "des": "="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 21,
+    "columna": "NUMERO",
+    "tipo": 42,
+    "des": "0"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "Signo",
+    "tipo": 42,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 24,
+    "columna": "ID",
+    "tipo": 42,
+    "des": "i"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 26,
+    "columna": "Signo",
+    "tipo": 42,
+    "des": "<"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 28,
+    "columna": "ID",
+    "tipo": 42,
+    "des": "primero"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 35,
+    "columna": "Signo",
+    "tipo": 42,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 37,
+    "columna": "ID",
+    "tipo": 42,
+    "des": "i"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 38,
+    "columna": "Signo",
+    "tipo": 42,
+    "des": "++"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 40,
+    "columna": "Signo",
+    "tipo": 42,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 42,
+    "columna": "Signo",
+    "tipo": 42,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "RESERVADA",
+    "tipo": 43,
+    "des": "for"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "Signo",
+    "tipo": 43,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 17,
+    "columna": "RESERVADA",
+    "tipo": 43,
+    "des": "int"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 21,
+    "columna": "ID",
+    "tipo": 43,
+    "des": "j"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "Signo",
+    "tipo": 43,
+    "des": "="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 25,
+    "columna": "NUMERO",
+    "tipo": 43,
+    "des": "6"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 26,
+    "columna": "Signo",
+    "tipo": 43,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 28,
+    "columna": "ID",
+    "tipo": 43,
+    "des": "j"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 30,
+    "columna": "Signo",
+    "tipo": 43,
+    "des": "<"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 32,
+    "columna": "ID",
+    "tipo": 43,
+    "des": "ultimo"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 38,
+    "columna": "Signo",
+    "tipo": 43,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 40,
+    "columna": "ID",
+    "tipo": 43,
+    "des": "j"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 41,
+    "columna": "Signo",
+    "tipo": 43,
+    "des": "++"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 43,
+    "columna": "Signo",
+    "tipo": 43,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 45,
+    "columna": "Signo",
+    "tipo": 43,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "RESERVADA",
+    "tipo": 44,
+    "des": "System"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "Signo",
+    "tipo": 44,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "RESERVADA",
+    "tipo": 44,
+    "des": "out"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 26,
+    "columna": "Signo",
+    "tipo": 44,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 27,
+    "columna": "RESERVADA",
+    "tipo": 44,
+    "des": "println"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 34,
+    "columna": "Signo",
+    "tipo": 44,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 35,
+    "columna": "Signo",
+    "tipo": 44,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 36,
+    "columna": "Signo",
+    "tipo": 44,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "Signo",
+    "tipo": 46,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "Signo",
+    "tipo": 47,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 48,
+    "des": "System"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 14,
+    "columna": "Signo",
+    "tipo": 48,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 15,
+    "columna": "RESERVADA",
+    "tipo": 48,
+    "des": "out"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "Signo",
+    "tipo": 48,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "RESERVADA",
+    "tipo": 48,
+    "des": "println"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 26,
+    "columna": "Signo",
+    "tipo": 48,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 27,
+    "columna": "CADENA",
+    "tipo": 48,
+    "des": "PARA QUE ESCOJER TUS POKEMONES, EMPIEZA BATALLA"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 76,
+    "columna": "Signo",
+    "tipo": 48,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 77,
+    "columna": "Signo",
+    "tipo": 48,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 49,
+    "des": "System"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 14,
+    "columna": "Signo",
+    "tipo": 49,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 15,
+    "columna": "RESERVADA",
+    "tipo": 49,
+    "des": "out"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "Signo",
+    "tipo": 49,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "RESERVADA",
+    "tipo": 49,
+    "des": "println"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 26,
+    "columna": "Signo",
+    "tipo": 49,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 27,
+    "columna": "CADENA",
+    "tipo": 49,
+    "des": ""
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 29,
+    "columna": "Signo",
+    "tipo": 49,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 30,
+    "columna": "Signo",
+    "tipo": 49,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 4,
+    "columna": "Signo",
+    "tipo": 50,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 4,
+    "columna": "RESERVADA",
+    "tipo": 51,
+    "des": "public"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 11,
+    "columna": "RESERVADA",
+    "tipo": 51,
+    "des": "void"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "ID",
+    "tipo": 51,
+    "des": "registro"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 24,
+    "columna": "Signo",
+    "tipo": 51,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 25,
+    "columna": "Signo",
+    "tipo": 51,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 27,
+    "columna": "Signo",
+    "tipo": 51,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 52,
+    "des": "String"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 15,
+    "columna": "ID",
+    "tipo": 52,
+    "des": "RJ1"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "Signo",
+    "tipo": 52,
+    "des": "="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 21,
+    "columna": "CADENA",
+    "tipo": 52,
+    "des": "vector"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 29,
+    "columna": "Signo",
+    "tipo": 52,
+    "des": ","
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 31,
+    "columna": "ID",
+    "tipo": 52,
+    "des": "RJ2"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 34,
+    "columna": "Signo",
+    "tipo": 52,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 54,
+    "des": "for"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "Signo",
+    "tipo": 54,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 13,
+    "columna": "RESERVADA",
+    "tipo": 54,
+    "des": "int"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 17,
+    "columna": "ID",
+    "tipo": 54,
+    "des": "i"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "Signo",
+    "tipo": 54,
+    "des": "="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 21,
+    "columna": "NUMERO",
+    "tipo": 54,
+    "des": "0"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "Signo",
+    "tipo": 54,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 24,
+    "columna": "ID",
+    "tipo": 54,
+    "des": "i"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 26,
+    "columna": "Signo",
+    "tipo": 54,
+    "des": "<"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 28,
+    "columna": "NUMERO",
+    "tipo": 54,
+    "des": "15"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 31,
+    "columna": "Signo",
+    "tipo": 54,
+    "des": "+"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 33,
+    "columna": "NUMERO",
+    "tipo": 54,
+    "des": "2"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 34,
+    "columna": "Signo",
+    "tipo": 54,
+    "des": "*"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 35,
+    "columna": "NUMERO",
+    "tipo": 54,
+    "des": "3"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 36,
+    "columna": "Signo",
+    "tipo": 54,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 38,
+    "columna": "ID",
+    "tipo": 54,
+    "des": "i"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 39,
+    "columna": "Signo",
+    "tipo": 54,
+    "des": "++"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 41,
+    "columna": "Signo",
+    "tipo": 54,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 43,
+    "columna": "Signo",
+    "tipo": 54,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "RESERVADA",
+    "tipo": 55,
+    "des": "for"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "Signo",
+    "tipo": 55,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 17,
+    "columna": "RESERVADA",
+    "tipo": 55,
+    "des": "int"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 21,
+    "columna": "ID",
+    "tipo": 55,
+    "des": "j"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "Signo",
+    "tipo": 55,
+    "des": "="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 25,
+    "columna": "NUMERO",
+    "tipo": 55,
+    "des": "0"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 26,
+    "columna": "Signo",
+    "tipo": 55,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 28,
+    "columna": "ID",
+    "tipo": 55,
+    "des": "j"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 30,
+    "columna": "Signo",
+    "tipo": 55,
+    "des": "<"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 32,
+    "columna": "NUMERO",
+    "tipo": 55,
+    "des": "34"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 34,
+    "columna": "Signo",
+    "tipo": 55,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 36,
+    "columna": "ID",
+    "tipo": 55,
+    "des": "j"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 37,
+    "columna": "Signo",
+    "tipo": 55,
+    "des": "++"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 39,
+    "columna": "Signo",
+    "tipo": 55,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 41,
+    "columna": "Signo",
+    "tipo": 55,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "RESERVADA",
+    "tipo": 56,
+    "des": "if"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "Signo",
+    "tipo": 56,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "ID",
+    "tipo": 56,
+    "des": "RJ1"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "Signo",
+    "tipo": 56,
+    "des": "!="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 26,
+    "columna": "CADENA",
+    "tipo": 56,
+    "des": "matriz"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 35,
+    "columna": "Signo",
+    "tipo": 56,
+    "des": "&&"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 38,
+    "columna": "ID",
+    "tipo": 56,
+    "des": "j"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 40,
+    "columna": "Signo",
+    "tipo": 56,
+    "des": "!="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 43,
+    "columna": "NUMERO",
+    "tipo": 56,
+    "des": "11"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 46,
+    "columna": "Signo",
+    "tipo": 56,
+    "des": "&&"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 49,
+    "columna": "ID",
+    "tipo": 56,
+    "des": "j"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 51,
+    "columna": "Signo",
+    "tipo": 56,
+    "des": "!="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 54,
+    "columna": "NUMERO",
+    "tipo": 56,
+    "des": "12"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 57,
+    "columna": "Signo",
+    "tipo": 56,
+    "des": "&&"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 60,
+    "columna": "ID",
+    "tipo": 56,
+    "des": "j"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 62,
+    "columna": "Signo",
+    "tipo": 56,
+    "des": "!="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 65,
+    "columna": "NUMERO",
+    "tipo": 56,
+    "des": "15"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 68,
+    "columna": "Signo",
+    "tipo": 56,
+    "des": "&&"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 71,
+    "columna": "ID",
+    "tipo": 56,
+    "des": "j"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 73,
+    "columna": "Signo",
+    "tipo": 56,
+    "des": "!="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 76,
+    "columna": "NUMERO",
+    "tipo": 56,
+    "des": "16"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 79,
+    "columna": "Signo",
+    "tipo": 56,
+    "des": "&&"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 82,
+    "columna": "ID",
+    "tipo": 56,
+    "des": "j"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 84,
+    "columna": "Signo",
+    "tipo": 56,
+    "des": "!="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 87,
+    "columna": "NUMERO",
+    "tipo": 56,
+    "des": "17"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 90,
+    "columna": "Signo",
+    "tipo": 56,
+    "des": "&&"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 93,
+    "columna": "ID",
+    "tipo": 56,
+    "des": "j"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 95,
+    "columna": "Signo",
+    "tipo": 56,
+    "des": "!="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 98,
+    "columna": "NUMERO",
+    "tipo": 56,
+    "des": "18"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 100,
+    "columna": "Signo",
+    "tipo": 56,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 102,
+    "columna": "Signo",
+    "tipo": 56,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 20,
+    "columna": "RESERVADA",
+    "tipo": 57,
+    "des": "System"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 26,
+    "columna": "Signo",
+    "tipo": 57,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 27,
+    "columna": "RESERVADA",
+    "tipo": 57,
+    "des": "out"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 30,
+    "columna": "Signo",
+    "tipo": 57,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 31,
+    "columna": "RESERVADA",
+    "tipo": 57,
+    "des": "print"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 36,
+    "columna": "Signo",
+    "tipo": 57,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 37,
+    "columna": "ID",
+    "tipo": 57,
+    "des": "RJ1"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 41,
+    "columna": "Signo",
+    "tipo": 57,
+    "des": "+"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 43,
+    "columna": "CADENA",
+    "tipo": 57,
+    "des": "\\t"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 47,
+    "columna": "Signo",
+    "tipo": 57,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 48,
+    "columna": "Signo",
+    "tipo": 57,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "Signo",
+    "tipo": 58,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "Signo",
+    "tipo": 59,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "RESERVADA",
+    "tipo": 60,
+    "des": "System"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "Signo",
+    "tipo": 60,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "RESERVADA",
+    "tipo": 60,
+    "des": "out"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "Signo",
+    "tipo": 60,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "RESERVADA",
+    "tipo": 60,
+    "des": "println"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 30,
+    "columna": "Signo",
+    "tipo": 60,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 31,
+    "columna": "CADENA",
+    "tipo": 60,
+    "des": ""
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 33,
+    "columna": "Signo",
+    "tipo": 60,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 34,
+    "columna": "Signo",
+    "tipo": 60,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "Signo",
+    "tipo": 61,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 62,
+    "des": "System"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 14,
+    "columna": "Signo",
+    "tipo": 62,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 15,
+    "columna": "RESERVADA",
+    "tipo": 62,
+    "des": "out"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "Signo",
+    "tipo": 62,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "RESERVADA",
+    "tipo": 62,
+    "des": "println"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 26,
+    "columna": "Signo",
+    "tipo": 62,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 27,
+    "columna": "CADENA",
+    "tipo": 62,
+    "des": ""
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 29,
+    "columna": "Signo",
+    "tipo": 62,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 30,
+    "columna": "Signo",
+    "tipo": 62,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 4,
+    "columna": "Signo",
+    "tipo": 63,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 4,
+    "columna": "RESERVADA",
+    "tipo": 64,
+    "des": "public"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 11,
+    "columna": "RESERVADA",
+    "tipo": 64,
+    "des": "void"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "ID",
+    "tipo": 64,
+    "des": "elmio"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 21,
+    "columna": "Signo",
+    "tipo": 64,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "RESERVADA",
+    "tipo": 64,
+    "des": "String"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 29,
+    "columna": "ID",
+    "tipo": 64,
+    "des": "h"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 30,
+    "columna": "Signo",
+    "tipo": 64,
+    "des": ","
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 32,
+    "columna": "RESERVADA",
+    "tipo": 64,
+    "des": "int"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 36,
+    "columna": "ID",
+    "tipo": 64,
+    "des": "ho"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 38,
+    "columna": "Signo",
+    "tipo": 64,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 39,
+    "columna": "Signo",
+    "tipo": 64,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 65,
+    "des": "boolean"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "ID",
+    "tipo": 65,
+    "des": "continuar"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 26,
+    "columna": "Signo",
+    "tipo": 65,
+    "des": "="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 28,
+    "columna": "BOLEANO",
+    "tipo": 65,
+    "des": "true"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 32,
+    "columna": "Signo",
+    "tipo": 65,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 66,
+    "des": "while"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 13,
+    "columna": "Signo",
+    "tipo": 66,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 14,
+    "columna": "ID",
+    "tipo": 66,
+    "des": "continuar"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "Signo",
+    "tipo": 66,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 24,
+    "columna": "Signo",
+    "tipo": 66,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "RESERVADA",
+    "tipo": 67,
+    "des": "for"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "Signo",
+    "tipo": 67,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 17,
+    "columna": "RESERVADA",
+    "tipo": 67,
+    "des": "int"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 21,
+    "columna": "ID",
+    "tipo": 67,
+    "des": "i"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "Signo",
+    "tipo": 67,
+    "des": "="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 25,
+    "columna": "NUMERO",
+    "tipo": 67,
+    "des": "0"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 26,
+    "columna": "Signo",
+    "tipo": 67,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 28,
+    "columna": "ID",
+    "tipo": 67,
+    "des": "i"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 30,
+    "columna": "Signo",
+    "tipo": 67,
+    "des": "<"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 32,
+    "columna": "NUMERO",
+    "tipo": 67,
+    "des": "15"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 34,
+    "columna": "Signo",
+    "tipo": 67,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 36,
+    "columna": "ID",
+    "tipo": 67,
+    "des": "i"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 37,
+    "columna": "Signo",
+    "tipo": 67,
+    "des": "++"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 39,
+    "columna": "Signo",
+    "tipo": 67,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 41,
+    "columna": "Signo",
+    "tipo": 67,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "RESERVADA",
+    "tipo": 68,
+    "des": "System"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "Signo",
+    "tipo": 68,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "RESERVADA",
+    "tipo": 68,
+    "des": "out"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 26,
+    "columna": "Signo",
+    "tipo": 68,
+    "des": "."
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 27,
+    "columna": "RESERVADA",
+    "tipo": 68,
+    "des": "print"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 32,
+    "columna": "Signo",
+    "tipo": 68,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 33,
+    "columna": "ID",
+    "tipo": 68,
+    "des": "i"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 35,
+    "columna": "Signo",
+    "tipo": 68,
+    "des": "+"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 37,
+    "columna": "CADENA",
+    "tipo": 68,
+    "des": ","
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 41,
+    "columna": "Signo",
+    "tipo": 68,
+    "des": "+"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 43,
+    "columna": "CADENA",
+    "tipo": 68,
+    "des": "\\t"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 47,
+    "columna": "Signo",
+    "tipo": 68,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 48,
+    "columna": "Signo",
+    "tipo": 68,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "RESERVADA",
+    "tipo": 69,
+    "des": "continue"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 24,
+    "columna": "Signo",
+    "tipo": 69,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "Signo",
+    "tipo": 70,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "ID",
+    "tipo": 71,
+    "des": "continuar"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "Signo",
+    "tipo": 71,
+    "des": "="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 24,
+    "columna": "BOLEANO",
+    "tipo": 71,
+    "des": "false"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 29,
+    "columna": "Signo",
+    "tipo": 71,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "Signo",
+    "tipo": 72,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 4,
+    "columna": "Signo",
+    "tipo": 73,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 4,
+    "columna": "RESERVADA",
+    "tipo": 74,
+    "des": "public"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 11,
+    "columna": "RESERVADA",
+    "tipo": 74,
+    "des": "char"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "ID",
+    "tipo": 74,
+    "des": "el"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "Signo",
+    "tipo": 74,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "RESERVADA",
+    "tipo": 74,
+    "des": "boolean"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 27,
+    "columna": "ID",
+    "tipo": 74,
+    "des": "a"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 28,
+    "columna": "Signo",
+    "tipo": 74,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 29,
+    "columna": "Signo",
+    "tipo": 74,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 75,
+    "des": "char"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 13,
+    "columna": "ID",
+    "tipo": 75,
+    "des": "hh"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "Signo",
+    "tipo": 75,
+    "des": "="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "CARACTER",
+    "tipo": 75,
+    "des": "j"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 21,
+    "columna": "Signo",
+    "tipo": 75,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 76,
+    "des": "if"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 10,
+    "columna": "Signo",
+    "tipo": 76,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 11,
+    "columna": "ID",
+    "tipo": 76,
+    "des": "hh"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 13,
+    "columna": "Signo",
+    "tipo": 76,
+    "des": "*"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 14,
+    "columna": "NUMERO",
+    "tipo": 76,
+    "des": "10"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "Signo",
+    "tipo": 76,
+    "des": "+"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 17,
+    "columna": "NUMERO",
+    "tipo": 76,
+    "des": "8"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 18,
+    "columna": "Signo",
+    "tipo": 76,
+    "des": "+"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "NUMERO",
+    "tipo": 76,
+    "des": "11"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 21,
+    "columna": "Signo",
+    "tipo": 76,
+    "des": "+"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "NUMERO",
+    "tipo": 76,
+    "des": "4"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "Signo",
+    "tipo": 76,
+    "des": "-"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 24,
+    "columna": "NUMERO",
+    "tipo": 76,
+    "des": "6"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 25,
+    "columna": "Signo",
+    "tipo": 76,
+    "des": "-"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 26,
+    "columna": "NUMERO",
+    "tipo": 76,
+    "des": "8"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 28,
+    "columna": "Signo",
+    "tipo": 76,
+    "des": "=="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 31,
+    "columna": "ID",
+    "tipo": 76,
+    "des": "df"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 33,
+    "columna": "Signo",
+    "tipo": 76,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "Signo",
+    "tipo": 77,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "RESERVADA",
+    "tipo": 78,
+    "des": "return"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "CARACTER",
+    "tipo": 78,
+    "des": "i"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "Signo",
+    "tipo": 78,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "Signo",
+    "tipo": 79,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 9,
+    "columna": "RESERVADA",
+    "tipo": 79,
+    "des": "else"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 14,
+    "columna": "RESERVADA",
+    "tipo": 79,
+    "des": "if"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "Signo",
+    "tipo": 79,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 17,
+    "columna": "ID",
+    "tipo": 79,
+    "des": "hh"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 20,
+    "columna": "Signo",
+    "tipo": 79,
+    "des": "=="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 23,
+    "columna": "NUMERO",
+    "tipo": 79,
+    "des": "10"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 25,
+    "columna": "Signo",
+    "tipo": 79,
+    "des": "+"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 26,
+    "columna": "NUMERO",
+    "tipo": 79,
+    "des": "5"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 27,
+    "columna": "Signo",
+    "tipo": 79,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 28,
+    "columna": "Signo",
+    "tipo": 79,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "RESERVADA",
+    "tipo": 80,
+    "des": "return"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "CARACTER",
+    "tipo": 80,
+    "des": "k"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "Signo",
+    "tipo": 80,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "Signo",
+    "tipo": 81,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 9,
+    "columna": "RESERVADA",
+    "tipo": 81,
+    "des": "else"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 14,
+    "columna": "RESERVADA",
+    "tipo": 81,
+    "des": "if"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 16,
+    "columna": "Signo",
+    "tipo": 81,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 17,
+    "columna": "ID",
+    "tipo": 81,
+    "des": "hola"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 21,
+    "columna": "Signo",
+    "tipo": 81,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "Signo",
+    "tipo": 81,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "Signo",
+    "tipo": 83,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 9,
+    "columna": "RESERVADA",
+    "tipo": 83,
+    "des": "else"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 13,
+    "columna": "Signo",
+    "tipo": 83,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 12,
+    "columna": "RESERVADA",
+    "tipo": 84,
+    "des": "double"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "ID",
+    "tipo": 84,
+    "des": "mira"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 24,
+    "columna": "Signo",
+    "tipo": 84,
+    "des": "="
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 26,
+    "columna": "NUMERO",
+    "tipo": 84,
+    "des": "0.1"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 29,
+    "columna": "Signo",
+    "tipo": 84,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "Signo",
+    "tipo": 85,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 8,
+    "columna": "RESERVADA",
+    "tipo": 86,
+    "des": "return"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 15,
+    "columna": "ID",
+    "tipo": 86,
+    "des": "hh"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 17,
+    "columna": "Signo",
+    "tipo": 86,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 4,
+    "columna": "Signo",
+    "tipo": 87,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 0,
+    "columna": "Signo",
+    "tipo": 88,
+    "des": "}"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 0,
+    "columna": "RESERVADA",
+    "tipo": 90,
+    "des": "public"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 7,
+    "columna": "RESERVADA",
+    "tipo": 90,
+    "des": "interface"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 17,
+    "columna": "ID",
+    "tipo": 90,
+    "des": "Javas"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 22,
+    "columna": "Signo",
+    "tipo": 90,
+    "des": "{"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 4,
+    "columna": "RESERVADA",
+    "tipo": 91,
+    "des": "public"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 11,
+    "columna": "RESERVADA",
+    "tipo": 91,
+    "des": "boolean"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 19,
+    "columna": "ID",
+    "tipo": 91,
+    "des": "sasfs"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 24,
+    "columna": "Signo",
+    "tipo": 91,
+    "des": "("
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 25,
+    "columna": "RESERVADA",
+    "tipo": 91,
+    "des": "int"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 29,
+    "columna": "ID",
+    "tipo": 91,
+    "des": "hola"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 33,
+    "columna": "Signo",
+    "tipo": 91,
+    "des": ")"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 34,
+    "columna": "Signo",
+    "tipo": 91,
+    "des": ";"
+  },
+  {
+    "tipoIns": "TOKEN",
+    "Fila": 0,
+    "columna": "Signo",
+    "tipo": 92,
+    "des": "}"
+  }
+]
