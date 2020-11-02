@@ -1,0 +1,36 @@
+version: "3"
+services:
+  frontend:
+    container_name: goserver
+    image: sitioweb
+    ports:
+      - "8080:8080"
+    networks:
+      testing_net:
+            ipv4_address: 182.18.7.9
+    environment:
+      - GOIP=182.18.7.9
+      - GOPORT=8080
+      - NODEIP=182.18.7.7
+      - NODEPORT=3000
+    command: go run /App/main.go 
+    depends_on:
+      - backend
+  backend:
+    container_name: nodeserver
+    image: servicio
+    ports:
+      - "3000:3000"
+    environment:
+      - NODEIP=182.18.7.7
+      - NODEPORT=3000
+    networks:
+      testing_net:
+            ipv4_address: 182.18.7.7
+
+networks:
+    testing_net:
+        ipam:
+            driver: default
+            config:
+                - subnet: 182.18.7.0/24

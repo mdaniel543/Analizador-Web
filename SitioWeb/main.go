@@ -41,7 +41,18 @@ func getServiceJs(w http.ResponseWriter, r *http.Request) {
 
 func postServiceJs(w http.ResponseWriter, r *http.Request) {
 
-	url := "http://localhost:3000/analizar"
+	nodeip, defip := os.LookupEnv("NODEIP")
+	nodeport, defport := os.LookupEnv("NODEPORT")
+
+	if !defip {
+		nodeip = "182.18.7.7"
+	}
+
+	if !defport {
+		nodeport = "3000"
+	}
+
+	url := "http://" + nodeip + ":" + nodeport + "/analizar/"
 
 	log.Printf(url)
 	java := r.FormValue("contenido-archivo")
@@ -70,7 +81,18 @@ func postServiceJs(w http.ResponseWriter, r *http.Request) {
 
 func postTraducorJs(w http.ResponseWriter, r *http.Request) {
 
-	url := "http://localhost:3000/traductor"
+	nodeip, defip := os.LookupEnv("NODEIP")
+	nodeport, defport := os.LookupEnv("NODEPORT")
+
+	if !defip {
+		nodeip = "182.18.7.7"
+	}
+
+	if !defport {
+		nodeport = "3000"
+	}
+
+	url := "http://" + nodeip + ":" + nodeport + "/traductor/"
 	//log.Println(string(as))
 	req, err := json.Marshal(map[string]string{
 		"resultado": as,
@@ -121,7 +143,19 @@ func postTraducorJs(w http.ResponseWriter, r *http.Request) {
 
 func postError(w http.ResponseWriter, r *http.Request) {
 
-	url := "http://localhost:3000/reporterror"
+	nodeip, defip := os.LookupEnv("NODEIP")
+	nodeport, defport := os.LookupEnv("NODEPORT")
+
+	if !defip {
+		nodeip = "182.18.7.7"
+	}
+
+	if !defport {
+		nodeport = "3000"
+	}
+
+	url := "http://" + nodeip + ":" + nodeport + "/reporterror/"
+
 	//log.Println(string(as))
 	req, err := json.Marshal(map[string]string{
 		"resultado": as,
@@ -172,7 +206,19 @@ func postError(w http.ResponseWriter, r *http.Request) {
 
 func postReporte(w http.ResponseWriter, r *http.Request) {
 
-	url := "http://localhost:3000/reportetoken"
+	nodeip, defip := os.LookupEnv("NODEIP")
+	nodeport, defport := os.LookupEnv("NODEPORT")
+
+	if !defip {
+		nodeip = "182.18.7.7"
+	}
+
+	if !defport {
+		nodeport = "3000"
+	}
+
+	url := "http://" + nodeip + ":" + nodeport + "/reportetoken/"
+
 	//log.Println(string(as))
 	req, err := json.Marshal(map[string]string{
 		"resultado": as,
@@ -223,7 +269,19 @@ func postReporte(w http.ResponseWriter, r *http.Request) {
 
 func postTraducorPy(w http.ResponseWriter, r *http.Request) {
 
-	url := "http://localhost:3000/traductorpy"
+	nodeip, defip := os.LookupEnv("NODEIP")
+	nodeport, defport := os.LookupEnv("NODEPORT")
+
+	if !defip {
+		nodeip = "182.18.7.7"
+	}
+
+	if !defport {
+		nodeport = "3000"
+	}
+
+	url := "http://" + nodeip + ":" + nodeport + "/traductorpy/"
+
 	//log.Println(string(as))
 	req, err := json.Marshal(map[string]string{
 		"resultado": as,
@@ -305,6 +363,16 @@ func uploader(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	ip, defip := os.LookupEnv("GOIP")
+	port, defport := os.LookupEnv("GOPORT")
+
+	if !defip {
+		ip = "182.18.7.9"
+	}
+
+	if !defport {
+		port = "8080"
+	}
 
 	http.Handle("/public/", http.StripPrefix("/public/", http.FileServer(http.Dir("public/"))))
 	http.HandleFunc("/", index)
@@ -316,6 +384,6 @@ func main() {
 	http.HandleFunc("/reporte", postReporte)
 	http.HandleFunc("/traductorpy", postTraducorPy)
 	log.Println("Running")
-	http.ListenAndServe(":8080", nil)
-	fmt.Println("Escuchando")
+	http.ListenAndServe(":"+port, nil)
+	fmt.Println("Escuchando por IP:" + ip + " PORT:" + port)
 }
