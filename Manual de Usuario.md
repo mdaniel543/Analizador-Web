@@ -2,7 +2,7 @@
 
 1. ##### Inicio 
 
-![](Imagenes/Captura de pantalla (36).png)
+![](https://github.com/mdaniel543/OLC1_P2_201709450/blob/master/Imagenes/Captura%20de%20pantalla%20(36).png)
 
 > Se muestra el diseño de inicio y se coloca con mucho énfasis donde poder subir el archivo que se desea analizar
 
