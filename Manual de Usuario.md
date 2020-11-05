@@ -2,7 +2,7 @@
 
 1. ##### Inicio 
 
-<img src="C:\Users\mdani\OneDrive - Facultad de Ingeniería de la Universidad de San Carlos de Guatemala\Imágenes\Capturas de pantalla\Captura de pantalla (36).png" style="zoom: 50%;" />
+![](C:\Users\mdani\OneDrive - Facultad de Ingeniería de la Universidad de San Carlos de Guatemala\Documentos\GitHub\OLC1_P2_201709450\Imagenes\Captura de pantalla (36).png)
 
 > Se muestra el diseño de inicio y se coloca con mucho énfasis donde poder subir el archivo que se desea analizar
 
