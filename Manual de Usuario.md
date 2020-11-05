@@ -10,17 +10,17 @@
 
 2. ##### Subir archivo y cargar 
 
-![](Imagenes/Captura de pantalla (37).png)
+![](https://github.com/mdaniel543/OLC1_P2_201709450/blob/master/Imagenes/Captura%20de%20pantalla%20(37).png)
 
 > Se selecciona el archivo de tipo java localmente y se presiona enviar para cargarlo en el servidor 
 
 3. ##### Se muestra el archivo en editor
 
-![](Imagenes/Captura de pantalla (39).png)
+![](https://github.com/mdaniel543/OLC1_P2_201709450/blob/master/Imagenes/Captura%20de%20pantalla%20(39).png)
 
 
 
-![](Imagenes/Captura de pantalla (40).png)
+![](https://github.com/mdaniel543/OLC1_P2_201709450/blob/master/Imagenes/Captura%20de%20pantalla%20(40).png)
 
  
 
@@ -30,7 +30,7 @@
 
 4. ##### Descargar Traducción de JavaScript
 
-![](Imagenes/Captura de pantalla (49).png)
+![](https://github.com/mdaniel543/OLC1_P2_201709450/blob/master/Imagenes/Captura%20de%20pantalla%20(49).png)
 
 > En la parte de arriba hay un apartado donde se puede descargar el archivo de JavaScript
 
@@ -38,7 +38,7 @@
 
 5. ##### Descargar Traducción de Python
 
-![](Imagenes/Captura de pantalla (50).png)
+![](https://github.com/mdaniel543/OLC1_P2_201709450/blob/master/Imagenes/Captura%20de%20pantalla%20(50).png)
 
 > En el mismo apartado para descarga, se puede descargar el archivo de tipo Python 
 
@@ -46,9 +46,9 @@
 
 6. ##### Reporte de Tokens y errores 
 
-![](Imagenes/Captura de pantalla (51).png)
+![](https://github.com/mdaniel543/OLC1_P2_201709450/blob/master/Imagenes/Captura%20de%20pantalla%20(51).png)
 
-![](Imagenes/Captura de pantalla (52).png)
+![](https://github.com/mdaniel543/OLC1_P2_201709450/blob/master/Imagenes/Captura%20de%20pantalla%20(52).png)
 
 
 
