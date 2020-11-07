@@ -54,6 +54,8 @@ func postServiceJs(w http.ResponseWriter, r *http.Request) {
 
 	url := "http://" + nodeip + ":" + nodeport + "/analizar/"
 
+	//url := "http://localhost:3000/analizar"
+
 	log.Printf(url)
 	java := r.FormValue("contenido-archivo")
 	as = java
@@ -93,6 +95,9 @@ func postTraducorJs(w http.ResponseWriter, r *http.Request) {
 	}
 
 	url := "http://" + nodeip + ":" + nodeport + "/traductor/"
+
+	//url := "http://localhost:3000/traductor"
+
 	//log.Println(string(as))
 	req, err := json.Marshal(map[string]string{
 		"resultado": as,
@@ -155,6 +160,8 @@ func postError(w http.ResponseWriter, r *http.Request) {
 	}
 
 	url := "http://" + nodeip + ":" + nodeport + "/reporterror/"
+
+	//url := "http://localhost:3000/reporterror"
 
 	//log.Println(string(as))
 	req, err := json.Marshal(map[string]string{
@@ -219,6 +226,8 @@ func postReporte(w http.ResponseWriter, r *http.Request) {
 
 	url := "http://" + nodeip + ":" + nodeport + "/reportetoken/"
 
+	//url := "http://localhost:3000/reportetoken"
+
 	//log.Println(string(as))
 	req, err := json.Marshal(map[string]string{
 		"resultado": as,
@@ -282,6 +291,8 @@ func postTraducorPy(w http.ResponseWriter, r *http.Request) {
 
 	url := "http://" + nodeip + ":" + nodeport + "/traductorpy/"
 
+	//url := "http://localhost:3000/traductorpy"
+
 	//log.Println(string(as))
 	req, err := json.Marshal(map[string]string{
 		"resultado": as,
@@ -322,7 +333,7 @@ func postTraducorPy(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	w.Header().Set("Content-Disposition", "attachment; filename= traduccion.py")
+	w.Header().Set("Content-Disposition", "attachment; filename = traduccion.py")
 	w.Header().Set("Content-Type", "application/octet-stream")
 	http.ServeFile(w, r, path)
 
@@ -386,5 +397,6 @@ func main() {
 	log.Println("Running")
 	http.ListenAndServe(":"+port, nil)
 	fmt.Println("Escuchando por IP:" + ip + " PORT:" + port)
-
+	/*http.ListenAndServe(":8080", nil)
+	fmt.Println("Escuchando")*/
 }

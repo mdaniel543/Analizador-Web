@@ -217,7 +217,7 @@ INS
     | PR_break PyC { $$ = instruccionesAPI.nuevobreak($1, $2);}
     | PR_continue PyC { $$ = instruccionesAPI.nuevoContinue($1, $2); }
     | PR_return EXP PyC { $$ = instruccionesAPI.nuevoreturn_e($1, $2, $3); }
-    | PR_return PyC { $$ = instruccionesAPI.nuevoreturn($1, $2, $3);}
+    | PR_return PyC { $$ = instruccionesAPI.nuevoreturn($1, $2);}
     | exico {$$ = instruccionesAPI.nuevoERROR('Lexico', this._$.first_line, this._$.first_column, yytext);}
     | error  { console.error('Este es un error sintactico: ' + yytext + ', en la linea: ' + this._$.first_line + ', en la columna: ' + this._$.first_column);
     $$ = instruccionesAPI.nuevoERROR('Sintactico', this._$.first_line, this._$.first_column, yytext);
